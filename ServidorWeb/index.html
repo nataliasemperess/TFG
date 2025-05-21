@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Simulación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+<div class="tab">
+  <button class="tablinks" onclick="openSlide(event, 'div-1')">REAL-TIME</button>
+  <button class="tablinks" onclick="openSlide(event, 'div-2')">LIFT INFO</button>
+  <button class="tablinks" onclick="openSlide(event, 'div-3')">TRIPS</button>
+  <button class="tablinks" onclick="openSlide(event, 'div-4')">HEIGHTS</button>
+  <button class="tablinks" onclick="openSlide(event, 'div-5')">DOOR STATUS</button>
+  <button class="tablinks" onclick="openSlide(event, 'div-6')">MORE INFO</button>
+</div>
+
+
+<div id="loading-screen">
+  <div class="loading-spinner"></div>
+  <p>Estableciendo conexión con los paneles...</p>
+</div>
+  
+<div class="slides div-1 active-slide">
+  
+  <!-- SIMULACIÓN EN TIEMPO REAL -->
+  <h3>SIMULATION IN REAL-TIME</h3>
+
+  <div class="elevator-simulation">
+    <div class="elevator-layout-horizontal">
+
+      <!-- Columna izquierda: imagen -->
+      <div class="elevator-image-column">
+          <div class="elevator-shaft">
+            <img src="img/dark_lift.png" class="elevator-cab" id="elevatorCab" alt="Imagen del ascensor">
+          </div>
+      </div>
+
+      <!-- Columna derecha: info -->
+      <div class="elevator-info-column">
+
+        <div class="elevator-info">
+          <div class="status-item">
+            <span id="floorStatus">2</span>
+            <img id="movementImage" src="img/parado_transparente.png" alt="Movement">
+            <img id="doorImage" src="img/dark_lift.png" id="elevatorCabPanel" alt="Door status">
+          </div>
+        
+          <div class="status-panel">
+            <h4>LIFT STATUS</h4>
+            <p><strong>Status:</strong> <span id="estadoActual">---</span></p>
+            <p><strong>Direction:</strong> <span id="direccionActual">---</span></p>
+            <p><strong>Door:</strong> <span id="estadoPuerta">---</span></p>
+            <p><strong>Last stop:</strong> <span id="tiempoParada">--:--</span></p>
+          </div>
+          
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="slides div-2">
+  
+  <!-- INFORMACIÓN GRAFANA -->
+  <h3>LIFT INFORMATION</h3>
+
+  <div class="time-selector">
+    <div class="time-selector-buttons">
+      <button data-range="1" class="time-button">Now</button>
+      <button data-range="5" class="time-button">5 min</button>
+      <button data-range="10" class="time-button">10 min</button>
+      <button data-range="60" class="time-button">1 h</button>
+      <button data-range="1440" class="time-button">Day</button>
+      <button data-range="10080" class="time-button">Week</button>
+      <button data-range="43200" class="time-button">Month</button>
+      <button data-range="525600" class="time-button">Year</button>
+    </div>
+    
+  </div>
+
+  <!-- CONTENEDOR DE PANEL GRAFANA -->
+  
+    <div class="panel">
+
+      <div class="panel panel-medium_up">
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&from=1744627691654&to=1747219691654&timezone=browser&var-tiempo=&refresh=5s&tab=transformations&panelId=9&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-tiempo=&tab=transformations&refresh=5s&panelId=15&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+      </div>
+
+      <div class="panel panel-medium_down">
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&from &timezone=Europe%2FMadrid&var-piso_actual=&refresh=5s&tab=transformations&panelId=7&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+      </div>
+    </div>
+
+</div>
+
+<div class="slides div-3">
+
+  <h3>TRIPS HIGHLIGHTS</h3>
+
+
+  <div class="time-selector">
+    <div class="time-selector-buttons">
+      <button data-range="1" class="time-button">Now</button>
+      <button data-range="5" class="time-button">5 min</button>
+      <button data-range="10" class="time-button">10 min</button>
+      <button data-range="60" class="time-button">1 h</button>
+      <button data-range="1440" class="time-button">Day</button>
+      <button data-range="10080" class="time-button">Week</button>
+      <button data-range="43200" class="time-button">Month</button>
+      <button data-range="525600" class="time-button">Year</button>
+    </div>
+    
+    
+  </div>
+
+    <div class="panel">
+
+      <div class="panel panel-medium_up">
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-piso_actual=&refresh=15s&tab=queries&panelId=21&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-piso_actual=&refresh=15s&tab=transformations&panelId=25&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-piso_actual=&refresh=15s&tab=queries&panelId=24&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+      </div>
+
+      <div class="panel panel-medium_down">
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-tiempo=&tab=transformations&refresh=5s&panelId=20&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+      </div>
+
+    </div>
+</div>
+
+<div class="slides div-4">
+
+  <h3>INFORMATION ABOUT THE HEIGHTS</h3>
+
+  <div class="time-selector">
+    <div class="time-selector-buttons">
+      <button data-range="1" class="time-button">Now</button>
+      <button data-range="5" class="time-button">5 min</button>
+      <button data-range="10" class="time-button">10 min</button>
+      <button data-range="60" class="time-button">1 h</button>
+      <button data-range="1440" class="time-button">Day</button>
+      <button data-range="10080" class="time-button">Week</button>
+      <button data-range="43200" class="time-button">Month</button>
+      <button data-range="525600" class="time-button">Year</button>
+    </div>
+    
+    
+  </div>
+
+    <div class="panel">
+        
+        <div class="panel panel-medium_up">
+          <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-tiempo=&refresh=5s&tab=transformations&panelId=27&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+          <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-tiempo=&refresh=5s&tab=queries&panelId=29&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+        </div>
+
+        <div class="panel panel-medium_down">
+          <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-tiempo=&refresh=5s&tab=transformations&panelId=28&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="slides div-5">
+
+  <h3>DOOR STATUS</h3>
+
+  <div class="time-selector">
+    <div class="time-selector-buttons">
+      <button data-range="1" class="time-button">Now</button>
+      <button data-range="5" class="time-button">5 min</button>
+      <button data-range="10" class="time-button">10 min</button>
+      <button data-range="60" class="time-button">1 h</button>
+      <button data-range="1440" class="time-button">Day</button>
+      <button data-range="10080" class="time-button">Week</button>
+      <button data-range="43200" class="time-button">Month</button>
+      <button data-range="525600" class="time-button">Year</button>
+    </div>
+    
+  </div>
+
+
+    <div class="panel">
+        
+        <div class="panel panel-medium_up">
+          <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&&timezone=Europe%2FMadrid&var-tiempo=&refresh=5s&tab=transformations&panelId=3&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+        </div>
+        <div class="panel panel-medium_down">
+          <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-tiempo=&tab=transformations&refresh=5s&panelId=12&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="slides div-6">
+
+  <h3>MORE INFORMATION</h3>
+
+  <div class="time-selector">
+    <div class="time-selector-buttons">
+      <button data-range="1" class="time-button">Now</button>
+      <button data-range="5" class="time-button">5 min</button>
+      <button data-range="10" class="time-button">10 min</button>
+      <button data-range="60" class="time-button">1 h</button>
+      <button data-range="1440" class="time-button">Day</button>
+      <button data-range="10080" class="time-button">Week</button>
+      <button data-range="43200" class="time-button">Month</button>
+      <button data-range="525600" class="time-button">Year</button>
+    </div>
+    
+  </div>
+  
+
+    <div class="panel">
+      <div class="panel panel-medium_up">
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&from=1747044899875&to=1747131299875&timezone=Europe%2FMadrid&var-tiempo=&tab=transformations&refresh=5s&panelId=10&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+      </div>
+      <div class="panel panel-medium_down">
+        <iframe src="http://localhost:3000/d-solo/bei64bl08ritce/ascensor?orgId=1&timezone=Europe%2FMadrid&var-tiempo=&refresh=5s&panelId=2&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+      </div>
+    </div>
+</div>
+
+<script>
+function openSlide(evt, slideName) {
+  var i, slides, tablinks;
+  
+  // Oculta todos los divs de clase 'slides'
+  slides = document.getElementsByClassName("slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Desactiva todas las pestañas
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Muestra la pestaña seleccionada
+  document.querySelector("." + slideName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Activa la primera pestaña automáticamente al cargar
+window.addEventListener("DOMContentLoaded", () => {
+  const firstTab = document.querySelector(".tablinks");
+  if (firstTab) {
+    firstTab.click();
+  }
+});
+</script>
+
+<!-- scripts -->
+
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+<!-- <script src="simulador_mqtt.js"></script> -->
+<script src="simulador_mqtt.js"></script> 
+<script src="elevator_logic.js"></script>
+
+</body>
+</html>
+

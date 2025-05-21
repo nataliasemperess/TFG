@@ -1,0 +1,695 @@
+/* ------------------------------
+   ESTILO GLOBAL DEL DOCUMENTO
+------------------------------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(236, 234, 234);
+  color: #625959;
+
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  margin-top: 40px;
+  margin-bottom: 40px ;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: white ;
+  color: rgb(255, 255, 255)
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.0em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 25px;
+  
+}
+
+h6 {
+  font-size: 0.5em;
+  font-weight: bold;
+  text-align: center;
+}
+/* ------------------------------
+   PRUEBA 
+------------------------------- */
+.div-1, .div-2, .div-3, .div-4, .div-5, .div-6 {
+  /* Solo conserva lo útil */
+  background-color: rgb(236, 234, 234);
+}
+
+.active-slide {
+  display: block;
+}
+
+.inactive-slide-down {
+  position: absolute;
+  display: none;
+  top: 100vh;
+  left: 0;
+}
+
+.inactive-slide-up {
+  position: absolute;
+  display: none;
+  top: -100vh;
+  left: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  overflow: auto; /* valor por defecto */
+}
+#template-2 {
+  min-height: 400px; /* O lo que consideres adecuado */
+  display: block;
+}
+
+.slides {
+  /*Animations*/
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* ------------------------------
+   PRUEBA DOTS
+------------------------------- */
+
+.pagination {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active-dot {
+  background-color: #333;
+}
+
+/* ------------------------------
+   SLIDE PARA ESPERAR LA CARGA
+------------------------------- */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color:  rgba(0, 0, 0, 0.5);
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loading-spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loading-screen p {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+/* ------------------------------
+   CABECERA PRINCIPAL
+------------------------------- */
+.main-header {
+  width: 100%;
+  background-color: #cacdcf; 
+  color: #6c6f72;           
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: none;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------
+   PANEL GRAFANA
+------------------------------- */
+.panel {
+  position: relative;
+  margin-top:60px;
+}
+
+.panel iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 38vh;
+  margin: 0 auto 20px auto;
+  box-shadow: none;
+  background-color: white
+}
+
+
+/* Tamaños específicos */
+.panel-small1 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: -110px;     
+  left: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-small2 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: -110px;     
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-small3 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: -110px;     
+  left: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-small4 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: 500px;
+  left: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-small5 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-small6 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: 500px;
+  left: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-small7 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: 200px;
+  left: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-small8 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-small9 {
+  position: relative;
+  position: absolute;
+  width: 24vw;                  /* 15% del ancho de la pantalla */
+  aspect-ratio: 1 / 1;          /* Mantiene forma cuadrada */
+  top: 200px;
+  left: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.panel-medium_up {
+  position: relative;
+  position: absolute;
+  width: 84vw;                  /* Igual a 3 paneles + márgenes */
+  aspect-ratio: 3.5 / 1;        /* Misma altura que los demás */
+  top: -110px;                  /* Igual que los otros paneles */
+  left: 50%;                    /* Centrado en pantalla */
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  }
+
+.panel-medium_2 {
+  position: relative;
+    position: absolute;
+    width: 52vw;                  /* 24vw * 2 + margen (4vw aprox) */
+    aspect-ratio: 2 / 1;          /* Más ancho que alto */
+    top: 60px;                       /* Mismo top que los pequeños */
+    left: 8%;                 /* Posicionamiento relativo ajustable */
+    transform: translateX(0);     /* No hace falta centrar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  
+.panel-medium_3 {
+  position: relative;
+    position: absolute;
+    width: 52vw;                  /* 24vw * 2 + margen (4vw aprox) */
+    aspect-ratio: 2 / 1;          /* Más ancho que alto */
+    top: 500px;                       /* Mismo top que los pequeños */
+    left: 8%;                 /* Posicionamiento relativo ajustable */
+    transform: translateX(0);     /* No hace falta centrar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+.panel-medium_centro {
+  position: relative;
+  position: absolute;
+  width: 84vw;                  /* Igual a 3 paneles + márgenes */
+  aspect-ratio: 3.5 / 1;        /* Misma altura que los demás */
+  top: 90px;                  /* Igual que los otros paneles */
+  left: 50%;                    /* Centrado en pantalla */
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  }
+
+
+.panel-medium_down {
+  position: relative;
+  position: absolute;
+  width: 84vw;                  /* Igual a 3 paneles + márgenes */
+  aspect-ratio: 3.5 / 1;        /* Misma altura que los demás */
+  top: 260px;                   /* Igual que los otros paneles */
+  left: 50%;                    /* Centrado en pantalla */
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  }
+  
+.panel-large {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ------------------------------
+   SIMULACIÓN ASCENSOR
+------------------------------- */
+.elevator-simulation {
+  padding: 40px 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.elevator-shaft {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+  max-width: 800px;
+  max-height: 800px;
+  margin: -10px auto;
+  background: url('img/prueba3.png') no-repeat center center;
+  background-size: cover;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: none; /* añadido para mejorar visual */
+  padding-left: 20px
+}
+
+.elevator-cab {
+  position: absolute;
+  bottom: 0;
+  right: 42%;
+  width: 65%;
+  height: 100px;
+  object-fit: contain;
+  transition: bottom 1s ease;
+  z-index: 2;
+}
+
+.elevator-layout-horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  align-items: center;
+  gap: 40px;
+  margin: 0 40px;
+
+}
+
+.elevator-image-column {
+  flex: 2;
+  max-width: none; /* mantienes tamaño grande de imagen */
+}
+.elevator-info-column {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80%;
+  padding-left: 0px; /* puedes reducir aún más */
+  margin-left: 0px; /* mueve toda la columna hacia la izquierda */
+}
+
+.elevator-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.elevator-status p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.status-panel {
+  background-color: rgb(97, 177, 196);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 250px;
+  font-size: 0.9em;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.status-panel h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #3e3939;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+
+.label {
+  font-weight: bold;
+  color: #333;
+  min-width: 100px;
+}
+
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.7em;
+}
+
+#movementImage {
+  height: 30px;
+  width: auto;
+}
+
+#doorImage {
+  height: 200px;
+  width: auto; 
+  align-items: center;
+}
+
+
+.label {
+  font-weight: normal;
+  color: #333;
+  min-width: 100px;
+}
+
+#floorStatus {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1;
+
+}
+
+/* ------------------------------
+   ESTADO DEL ASCENSOR
+------------------------------- */
+.elevator-status {
+  text-align: left;
+  margin-top: 20px;
+  min-width: 150px;
+}
+
+.elevator-status h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.elevator-status p {
+  margin: 3px 0;
+  font-size: 1em;
+}
+
+/* ------------------------------
+   SELECTOR DE TIEMPO
+------------------------------- */
+.time-selector {
+  text-align: left;
+  margin-bottom: 0px;
+  padding-left: 160px;
+}
+
+.time-selector-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.time-button {
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.time-button:hover {
+  background-color: #777777;
+}
+
+.time-button.active {
+  background-color: #5cb2c7;
+  font-weight: bold;
+}
+
+/* ------------------------------
+   PRUEBA TABS
+------------------------------- */
+
+
+.tab {
+  overflow: hidden;
+  background-color: rgb(82, 155, 172);
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+}
+
+.tab button:hover {
+  background-color: rgb(100, 189, 209);
+  
+}
+
+.tab button.active {
+  background-color: #58a8bd;
+}
+
+
+/* ------------------------------
+   MEDIA QUERY RESPONSIVA
+------------------------------- */
+@media (max-width: 800px) {
+  .elevator-layout-horizontal {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 30px;
+  }
+
+  .elevator-shaft {
+    width: 90vw;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .elevator-info {
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .status-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .status-item img {
+    height: 20px;
+  }
+
+  #floorStatus {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .status-item img {
+    height: 40px;
+  }
+
+  #floorStatus {
+    font-size: 2em;
+  }
+
+  .panel iframe {
+    height: 30vh;
+  }
+}
