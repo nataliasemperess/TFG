@@ -1,18 +1,18 @@
-## Natalia Sempere - exam_ws
+## Natalia Sempere - TFG SIMULACIÓN NAYAR
 
-### DOCUMENTACIÓN DEL MODELO OPEN-RMF - BIBLIOTECA UJI
+### DOCUMENTACIÓN DEL MODELO OPEN-RMF - EDIFICIO DE NAYAR SYSTEMS
 
-Este documento describe de forma detallada el procedimiento para construir un modelo funcional en Open-RMF, en este caso basado en un modelo de la biblioteca de la Universitat Jaume I. 
+Este documento describe de forma detallada el procedimiento para construir un modelo funcional en Open-RMF, en este caso basado en un modelo del edificio de Nayar Systems.
 
 ![imagen](https://github.com/user-attachments/assets/b9e2384d-8048-41b2-9bd1-63e3500742e2)
 
-#### 1) Create a ROS workspace named "exam_ws" with a README.md file in it. 
+#### 1) Create a ROS workspace named "TFG_ws" with a README.md file in it. 
 
 En primer lugar, creamos la estructura básica del workspace de ROS 2, donde se alojará el paquete del examen:
 
 ```bash
-mkdir -p /home/usuario/Documentos/GitHub/IR2134/exam_ws/src
-cd /home/usuario/Documentos/GitHub/IR2134/exam_ws
+mkdir -p /home/usuario/Documentos/GitHub/TFG/simulación/TFG_ws/src
+cd /home/usuario/Documentos/GitHub/TFG/simulación/TFG_ws/
 touch README.md
 ```
 
@@ -21,9 +21,9 @@ touch README.md
 En este paso iniciamos el entorno Docker para facilitar el desarrollo : 
 
 ```bash
-cd /home/usuario/Documentos/GitHub/IR2134/
+cd /home/usuario/Documentos/GitHub/TFG/simulación/
 
-rocker --nvidia --x11 --name rmf_library -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST --network host --user --volume `pwd`/exam_ws:/exam_ws -- ghcr.io/open-rmf/rmf/rmf_demos:latest bash
+rocker --nvidia --x11 --name rmf_nayar -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST --network host --user --volume `pwd`/TFG_ws:/TFG_ws -- ghcr.io/open-rmf/rmf/rmf_demos:latest bash
 ```
 Este contenedor nos ofrece un entorno gráfico, conectividad de red y monta el workspace exam_ws en /exam_ws dentro del contenedor.
 
