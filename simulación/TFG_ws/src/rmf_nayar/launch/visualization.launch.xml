@@ -4,8 +4,8 @@
 
   <arg name="use_sim_time" default="false"/>
   <arg name="rate" default="10.0" description= "The rate in hz at which the scheduler markers should publish"/>
-  <arg name="map_name" default="library" description="The name of the map to initialize the visualizer"/>
-  <arg name="viz_config_file" default="$(find-pkg-share rmf_library)/config/library.rviz"/>
+  <arg name="map_name" default="nayar" description="The name of the map to initialize the visualizer"/>
+  <arg name="viz_config_file" default="$(find-pkg-share rmf_nayar)/config/nayar.rviz"/>
   <arg name="display_names" default="true"/>
   <arg name="websocket_port" default="8006"/>
   <arg name="headless" default="false" description="Do not launch rviz2"/>

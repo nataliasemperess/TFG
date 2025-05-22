@@ -1,7 +1,7 @@
 <?xml version='1.0' ?>
 
 <launch>
-  <arg name="map_package" default="rmf_library" description="Name of the map package" />
+  <arg name="map_package" default="rmf_nayar" description="Name of the map package" />
   <arg name="map_name" description="Name of the rmf_demos map to simulate" />
   <arg name="use_crowdsim" default='0'/>
   <arg name="gazebo_version" default='8'/>

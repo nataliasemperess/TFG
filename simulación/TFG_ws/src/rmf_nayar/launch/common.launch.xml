@@ -31,7 +31,7 @@
 
   <!-- Visualizer -->
   <group>
-    <include file="$(find-pkg-share rmf_library)/launch/visualization.launch.xml">
+    <include file="$(find-pkg-share rmf_nayar)/launch/visualization.launch.xml">
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
       <arg name="map_name" value="$(var initial_map)"/>
       <arg name="viz_config_file" value ="$(var viz_config_file)"/>
