@@ -1,0 +1,43 @@
+<?xml version='1.0' ?>
+
+<launch>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="failover_mode" default="false"/>
+  <arg name="gazebo_version" default="8"/>
+  <arg name="sim_update_rate" default="100"/>
+
+  <!-- Common launch -->
+  <include file="$(find-pkg-share rmf_library)/launch/common.launch.xml">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="viz_config_file" value="$(find-pkg-share rmf_library)/config/library.rviz"/>
+    <arg name="config_file" value="$(find-pkg-share rmf_library)/maps/library/library.building.yaml"/>
+    <arg name="use_reservation_node" value="true"/>
+  </include>
+
+  <!-- TinyRobot fleet adapter -->
+  <group>
+    <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_library)/maps/library/nav_graphs/0.yaml" />
+      <arg name="config_file" value="$(find-pkg-share rmf_library)/config/tinyRobot_config.yaml"/>
+    </include>
+  </group>
+  
+  <!-- CleanerBotA fleet adapter -->
+  <group>
+    <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_library)/maps/library/nav_graphs/1.yaml" />
+      <arg name="config_file" value="$(find-pkg-share rmf_library)/config/cleanerBotA_config.yaml"/>
+    </include>
+  </group>
+  
+    <!-- Simulation launch -->
+  <include file="$(find-pkg-share rmf_library)/launch/simulation.launch.xml">
+    <arg name="map_name" value="library" />
+    <arg name="gazebo_version" value="$(var gazebo_version)" />
+    <arg name="sim_update_rate" value="$(var sim_update_rate)"/>
+  </include>
+
+</launch>
+
