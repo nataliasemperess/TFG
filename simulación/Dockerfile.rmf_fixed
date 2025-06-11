@@ -1,0 +1,26 @@
+FROM ghcr.io/open-rmf/rmf/rmf_demos:latest
+
+# Eliminar fuentes conflictivas de ROS
+RUN grep -lr "packages.ros.org" /etc/apt/sources.list.d/ | xargs rm -f || true && \
+    sed -i '/packages.ros.org/ d' /etc/apt/sources.list
+
+# Añadir clave GPG actualizada de ROS
+RUN curl -fsSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
+    -o /usr/share/keyrings/ros-archive-keyring.gpg && \
+    echo "deb [signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu noble main" \
+    > /etc/apt/sources.list.d/ros2.list && \
+    apt-get update
+
+# Herramientas útiles y localización
+RUN apt-get install -y sudo locales && \
+    locale-gen en_US.UTF-8
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US:en
+ENV LC_ALL=en_US.UTF-8
+
+# Crear usuario compatible con rocker
+RUN useradd -ms /bin/bash usuario && \
+    echo 'usuario ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+USER usuario
+WORKDIR /home/usuario
+

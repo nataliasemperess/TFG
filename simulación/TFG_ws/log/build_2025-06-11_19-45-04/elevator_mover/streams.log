@@ -1,0 +1,17 @@
+[0.618s] Invoking command in '/TFG_ws/build/elevator_mover': PYTHONPATH=/TFG_ws/build/elevator_mover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/TFG_ws/install/elevator_mover/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /TFG_ws/build/elevator_mover/build --no-deps symlink_data
+[0.812s] running develop
+[0.904s] running egg_info
+[0.905s] writing elevator_mover.egg-info/PKG-INFO
+[0.905s] writing dependency_links to elevator_mover.egg-info/dependency_links.txt
+[0.905s] writing entry points to elevator_mover.egg-info/entry_points.txt
+[0.905s] writing requirements to elevator_mover.egg-info/requires.txt
+[0.905s] writing top-level names to elevator_mover.egg-info/top_level.txt
+[0.907s] reading manifest file 'elevator_mover.egg-info/SOURCES.txt'
+[0.907s] writing manifest file 'elevator_mover.egg-info/SOURCES.txt'
+[0.908s] running build_ext
+[0.908s] Creating /TFG_ws/install/elevator_mover/lib/python3.10/site-packages/elevator-mover.egg-link (link to .)
+[0.910s] Installing elevator_mover_node script to /TFG_ws/install/elevator_mover/lib/elevator_mover
+[0.910s] 
+[0.910s] Installed /TFG_ws/build/elevator_mover
+[0.910s] running symlink_data
+[0.932s] Invoked command in '/TFG_ws/build/elevator_mover' returned '0': PYTHONPATH=/TFG_ws/build/elevator_mover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/TFG_ws/install/elevator_mover/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /TFG_ws/build/elevator_mover/build --no-deps symlink_data

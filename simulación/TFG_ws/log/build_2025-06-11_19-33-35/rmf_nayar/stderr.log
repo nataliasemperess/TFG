@@ -1,0 +1,6 @@
+[0mBUILDING WORLDFILE WITH COMMAND: ros2 run rmf_building_map_tools building_map_generator gazebo /TFG_ws/src/rmf_nayar/maps/nayar/nayar.building.yaml /TFG_ws/build/rmf_nayar/maps/nayar/nayar.world /TFG_ws/build/rmf_nayar/maps/nayar/models[0m
+[0mDOWNLOADING MODELS WITH COMMAND: ros2 run rmf_building_map_tools building_map_model_downloader /TFG_ws/src/rmf_nayar/maps/nayar/nayar.building.yaml[0m
+[0mBUILDING WORLDFILE WITH COMMAND: ros2 run rmf_building_map_tools building_map_generator gazebo /TFG_ws/src/rmf_nayar/maps/nayar/nayar3.building.yaml /TFG_ws/build/rmf_nayar/maps/nayar3/nayar3.world /TFG_ws/build/rmf_nayar/maps/nayar3/models[0m
+[0mDOWNLOADING MODELS WITH COMMAND: ros2 run rmf_building_map_tools building_map_model_downloader /TFG_ws/src/rmf_nayar/maps/nayar/nayar3.building.yaml[0m
+/opt/ros/humble/lib/python3.10/site-packages/building_map/floor.py:144: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  for item in geom:
