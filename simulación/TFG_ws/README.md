@@ -25,6 +25,20 @@ cd /home/usuario/Documentos/GitHub/TFG/simulación/
 
 rocker --nvidia --x11 --name rmf_nayar -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST --network host --user --volume `pwd`/TFG_ws:/TFG_ws -- ghcr.io/open-rmf/rmf/rmf_demos:latest bash
 ```
+
+```bash
+cd /home/usuario/Documentos/GitHub/TFG/simulación/
+
+rocker --nvidia --x11 --name ros_humble   --network host   --user   --volume `pwd`/TFG_ws:/TFG_ws   -- ros:humble bash
+
+```
+
+```bash
+cd /home/usuario/Documentos/GitHub/TFG/simulación/
+rocker --nvidia --x11 --name rmf_nayar   -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST   --network host   --volume $(pwd)/TFG_ws:/TFG_ws:rw   -- rmf_demos_fixed bash
+
+
+```
 Este contenedor nos ofrece un entorno gráfico, conectividad de red y monta el workspace exam_ws en /exam_ws dentro del contenedor.
 
 #### 3) Create a ROS package named "rmf_library" and the folders : "launch", "config" and "maps".
@@ -91,7 +105,7 @@ traffic-editor
 ```bash
 source /opt/ros/jazzy/setup.bash
 sudo cp -R /root/.gazebo .	
-cd ../../exam_ws
+cd ../../TFG_ws
 
 rm -rf build/ install/ log/
 colcon build
