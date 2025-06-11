@@ -91,7 +91,7 @@ traffic-editor
 ```bash
 source /opt/ros/jazzy/setup.bash
 sudo cp -R /root/.gazebo .	
-cd ../../exam_ws
+cd ../../TFG_ws
 
 rm -rf build/ install/ log/
 colcon build
