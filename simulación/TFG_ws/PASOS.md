@@ -93,8 +93,22 @@ source /opt/ros/jazzy/setup.bash
 mosquitto -d
 ros2 run mqtt_ros_bridge mqtt_ros_bridge_node
 ```
+#### Terminal 3 : Prueba envio por MQTT
 
-#### Terminal 3 : Mover el ascensor 
+
+```bash
+docker exec -it rmf_nayar bash
+cd ../../TFG_ws/
+source /TFG_ws/install/setup.bash
+source /opt/ros/jazzy/setup.bash
+
+sudo apt install mosquitto-clients
+
+mosquitto_sub -h localhost -t "ascensor/planta"
+mosquitto_pub -h localhost -t "ascensor/planta" -m "1" 
+
+```
+#### Terminal 4 : Mover el ascensor 
 
 
 ```bash
