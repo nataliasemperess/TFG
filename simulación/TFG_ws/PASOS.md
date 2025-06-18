@@ -84,3 +84,17 @@ ros2 launch rmf_nayar nayar.launch.xml
 ```
 
 
+#### Terminal 2 : Mover el ascensor 
+
+```bash 
+
+#### Terminal 1 : Lanzar Gazebo y RViz
+
+```bash
+docker exec -it rmf_nayar bash
+cd ../../TFG_ws/
+source /TFG_ws/install/setup.bash
+source /opt/ros/jazzy/setup.bash
+
+``
+``
