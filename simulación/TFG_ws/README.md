@@ -32,6 +32,14 @@ rocker --nvidia --x11 --name rmf_nayar \
 
 ```
 
+#### Abrir otro docker
+
+```bash
+docker ps
+docker exec -it rmf_nayar bash
+
+```
+
 
 
 #### 3) Create a ROS package named "rmf_library" and the folders : "launch", "config" and "maps".
