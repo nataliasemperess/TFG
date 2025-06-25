@@ -20,27 +20,21 @@ rocker --nvidia --x11 \
 
 ```
 
-#### Abrir otro docker
-
 ```bash
-docker ps
-docker exec -it rmf_nayar bash
+apt update
+apt install -y ros-humble-rmf-building-map-tools
+apt update
+apt install -y ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control
 
 ```
 
-#### 2 ) Traffic-editor.
-
-Desde dentro del docker, abriremos el traffic-editor y comenzaremos a construir el modelo:
+#### Generate the Gazebo world 
 
 ```bash
-cd /home/usuario/Documentos/GitHub/TFG/simulación/TFG_ws/src/rmf_nayar/maps
-traffic-editor
-```
+source /opt/ros/humble/setup.bash
+rm -rf build/ install/ log/
 
-#### 3) Generate the Gazebo world 
 
-```bash
-source /opt/ros/jazzy/setup.bash
 sudo cp -R /root/.gazebo .	
 cd ../../TFG_ws
 
