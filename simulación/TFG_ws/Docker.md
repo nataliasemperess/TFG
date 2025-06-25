@@ -1,58 +1,22 @@
 ## Natalia Sempere - TFG SIMULACIÓN NAYAR
 
-### DOCUMENTACIÓN DEL MODELO OPEN-RMF - EDIFICIO DE NAYAR SYSTEMS
-
-Este documento describe de forma detallada el procedimiento para construir un modelo funcional en Open-RMF, en este caso basado en un modelo del edificio de Nayar Systems.
-
-#### Solo si no funciona el Docker
-
-1. Clonar el repositori https://github.com/open-rmf/rmf
-   
-2. Editar l'arxiu rmf.repos, canviant "main" per "jazzy" a les línies 33 i 45 (versions dels repositoris rmf_simulation i rmf_traffic_editor, ho expliquen ací: https://github.com/open-rmf/rmf_demos/issues/306)
-   
-3. Generar la imatge de Docker amb l'ordre
- 
- ```bash
-docker build -t rmf_demos .
-```
 
 ```bash
-cd ~/Documentos/GitHub/TFG/simulación/
+cd ~/Documentos/GitHub/TFG/simulación
 docker build -t rmf_demos_humble -f Dockerfile.rmf_fixed .
-```
 
-4. Comprovar que funciona bé amb la demo de l'office:
-   
-```bash
-rocker --nvidia --x11 --name rmf_demos   -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST   --network host   rmf_demos bash
-
-sudo cp -R /root/.gazebo .
-ros2 launch rmf_demos_gz  office.launch.xml
-```
-
-
-5. Provar el teu codi:
-```bash
-rocker --nvidia --x11 --name rmf_demos   -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST   --network host --user   --volume `pwd`/rmf_ws:/home/usuario/rmf_ws --  rmf_demos  bash
-sudo cp -R /root/.gazebo .
-cd rmf_ws
-colcon build
-source install/setup.bash
-ros2 launch rmf_demos_gz TI.launch.xml
 ```
 
 #### 1) Docker container with : 
 
 
 ```bash
-cd /home/usuario/Documentos/GitHub/TFG/simulación/
-rocker --nvidia --x11 --name rmf_nayar \
+rocker --nvidia --x11 \
+  --name rmf_demos_humble \
+  -v $(pwd)/TFG_ws:/TFG_ws \
   -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST \
   --network host \
-  --user \
-  --volume `pwd`/TFG_ws:/TFG_ws \
-  --mode interactive \
-  -- rmf_demos bash
+  rmf_demos_humble
 
 ```
 
