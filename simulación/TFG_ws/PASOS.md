@@ -91,7 +91,7 @@ source install/setup.bash
 ros2 launch rmf_nayar nayar.launch.xml 
 ```
 
-#### Terminal 1 : Lanzar Tasks por plantas
+#### Prueba: Lanzar Tasks por plantas
 
 ```bash
 docker exec -it rmf_nayar bash
@@ -104,7 +104,7 @@ ros2 run rmf_demos_tasks dispatch_patrol -p floor1 -n 1 --use_sim_time
 
 
 
-#### Terminal 2 : MQTT-ROS
+#### Terminal 2 : Ejecutar el movimiento
 
 
 ```bash
@@ -114,9 +114,11 @@ source /TFG_ws/install/setup.bash
 source /opt/ros/jazzy/setup.bash
 sudo apt update && sudo apt install -y mosquitto
 mosquitto -d
-ros2 run mqtt_ros_bridge mqtt_ros_bridge_node
+
+cd src
+python3 mqtt_to_ros_task.py
 ```
-#### Terminal 3 : Prueba envio por MQTT
+#### Terminal 3 : Simular envio por MQTT
 
 
 ```bash
@@ -125,21 +127,11 @@ cd ../../TFG_ws/
 source /TFG_ws/install/setup.bash
 source /opt/ros/jazzy/setup.bash
 
+sudo apt update && sudo apt install -y mosquitto
+mosquitto -d
 sudo apt update
 sudo apt install mosquitto-clients
 
-mosquitto_sub -h localhost -t "ascensor/planta"
-mosquitto_pub -h localhost -t "ascensor/planta" -m "1" 
+mosquitto_pub -h localhost -t "/ascensor/move_to" -m '{"destination_floor": "planta1"}'
 ```
-![imagen](https://github.com/user-attachments/assets/06220a7f-9963-491d-a5cf-5ed0301cc5b8)
 
-#### Terminal 4 : Mover el ascensor 
-
-
-```bash
-docker exec -it rmf_nayar bash
-cd ../../TFG_ws/
-source /TFG_ws/install/setup.bash
-source /opt/ros/jazzy/setup.bash
-
-```
