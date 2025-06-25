@@ -90,6 +90,7 @@ docker exec -it rmf_nayar bash
 cd ../../TFG_ws/
 source /TFG_ws/install/setup.bash
 source /opt/ros/jazzy/setup.bash
+sudo apt update && sudo apt install -y mosquitto
 mosquitto -d
 ros2 run mqtt_ros_bridge mqtt_ros_bridge_node
 ```
