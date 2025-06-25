@@ -15,6 +15,12 @@ Este documento describe de forma detallada el procedimiento para construir un mo
  ```bash
 docker build -t rmf_demos .
 ```
+
+```bash
+cd ~/Documentos/GitHub/TFG/simulación/
+docker build -t rmf_demos_humble -f Dockerfile.rmf_fixed .
+```
+
 4. Comprovar que funciona bé amb la demo de l'office:
    
 ```bash
@@ -23,6 +29,7 @@ rocker --nvidia --x11 --name rmf_demos   -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALH
 sudo cp -R /root/.gazebo .
 ros2 launch rmf_demos_gz  office.launch.xml
 ```
+
 
 5. Provar el teu codi:
 ```bash
@@ -35,6 +42,7 @@ ros2 launch rmf_demos_gz TI.launch.xml
 ```
 
 #### 1) Docker container with : 
+
 
 ```bash
 cd /home/usuario/Documentos/GitHub/TFG/simulación/
