@@ -1,9 +1,0 @@
-source;share/elevator_mover/hook/pythonpath.ps1
-source;share/elevator_mover/hook/pythonpath.dsv
-source;share/elevator_mover/hook/pythonpath.sh
-source;share/elevator_mover/hook/ament_prefix_path.ps1
-source;share/elevator_mover/hook/ament_prefix_path.dsv
-source;share/elevator_mover/hook/ament_prefix_path.sh
-source;../../build/elevator_mover/share/elevator_mover/hook/pythonpath_develop.ps1
-source;../../build/elevator_mover/share/elevator_mover/hook/pythonpath_develop.dsv
-source;../../build/elevator_mover/share/elevator_mover/hook/pythonpath_develop.sh
