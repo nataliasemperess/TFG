@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/elevator_mover/elevator_mover.egg-info
+writing ../../build/elevator_mover/elevator_mover.egg-info/PKG-INFO
+writing dependency_links to ../../build/elevator_mover/elevator_mover.egg-info/dependency_links.txt
+writing entry points to ../../build/elevator_mover/elevator_mover.egg-info/entry_points.txt
+writing requirements to ../../build/elevator_mover/elevator_mover.egg-info/requires.txt
+writing top-level names to ../../build/elevator_mover/elevator_mover.egg-info/top_level.txt
+writing manifest file '../../build/elevator_mover/elevator_mover.egg-info/SOURCES.txt'
+reading manifest file '../../build/elevator_mover/elevator_mover.egg-info/SOURCES.txt'
+writing manifest file '../../build/elevator_mover/elevator_mover.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /TFG_ws/build/elevator_mover/build
+creating /TFG_ws/build/elevator_mover/build/lib
+creating /TFG_ws/build/elevator_mover/build/lib/elevator_mover
+copying elevator_mover/elevator_mover_node.py -> /TFG_ws/build/elevator_mover/build/lib/elevator_mover
+copying elevator_mover/__init__.py -> /TFG_ws/build/elevator_mover/build/lib/elevator_mover
+running install
+running install_lib
+creating /TFG_ws/install/elevator_mover/lib/python3.12/site-packages/elevator_mover
+copying /TFG_ws/build/elevator_mover/build/lib/elevator_mover/elevator_mover_node.py -> /TFG_ws/install/elevator_mover/lib/python3.12/site-packages/elevator_mover
+copying /TFG_ws/build/elevator_mover/build/lib/elevator_mover/__init__.py -> /TFG_ws/install/elevator_mover/lib/python3.12/site-packages/elevator_mover
+byte-compiling /TFG_ws/install/elevator_mover/lib/python3.12/site-packages/elevator_mover/elevator_mover_node.py to elevator_mover_node.cpython-312.pyc
+byte-compiling /TFG_ws/install/elevator_mover/lib/python3.12/site-packages/elevator_mover/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /TFG_ws/install/elevator_mover/share/ament_index
+creating /TFG_ws/install/elevator_mover/share/ament_index/resource_index
+creating /TFG_ws/install/elevator_mover/share/ament_index/resource_index/packages
+copying resource/elevator_mover -> /TFG_ws/install/elevator_mover/share/ament_index/resource_index/packages
+copying package.xml -> /TFG_ws/install/elevator_mover/share/elevator_mover
+running install_egg_info
+Copying ../../build/elevator_mover/elevator_mover.egg-info to /TFG_ws/install/elevator_mover/lib/python3.12/site-packages/elevator_mover-0.0.0-py3.12.egg-info
+running install_scripts
+Installing elevator_mover_node script to /TFG_ws/install/elevator_mover/lib/elevator_mover
+writing list of installed files to '/TFG_ws/build/elevator_mover/install.log'

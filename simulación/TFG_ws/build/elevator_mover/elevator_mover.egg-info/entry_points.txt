@@ -1,0 +1,2 @@
+[console_scripts]
+elevator_mover_node = elevator_mover.elevator_mover_node:main
