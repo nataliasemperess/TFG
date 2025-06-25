@@ -90,6 +90,20 @@ source install/setup.bash
 ```bash 
 ros2 launch rmf_nayar nayar.launch.xml 
 ```
+
+#### Terminal 1 : Lanzar Tasks por plantas
+
+```bash
+docker exec -it rmf_nayar bash
+cd ../../TFG_ws/
+source /TFG_ws/install/setup.bash
+source /opt/ros/jazzy/setup.bash
+ros2 run rmf_demos_tasks dispatch_patrol -p floor1 -n 1 --use_sim_time
+
+```
+
+
+
 #### Terminal 2 : MQTT-ROS
 
 
