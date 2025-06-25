@@ -20,8 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
     'console_scripts': [
-        'elevator_mover_node = elevator_mover.elevator_mover_node:main',
+    'elevator_mover_node = elevator_mover.elevator_mover_node:main',
     ],
+
 },
 
 )

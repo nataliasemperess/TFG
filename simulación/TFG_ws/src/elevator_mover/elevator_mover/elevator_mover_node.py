@@ -1,63 +1,64 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
-from gazebo_msgs.srv import SetModelState
-from gazebo_msgs.msg import ModelState
-from geometry_msgs.msg import Pose, Twist
+from gazebo_msgs.srv import SetEntityState
+from gazebo_msgs.msg import EntityState
+import yaml
+import os
 
 class ElevatorMover(Node):
     def __init__(self):
         super().__init__('elevator_mover_node')
 
-        # 1. Crear el cliente para el servicio de Gazebo
-        self.client = self.create_client(SetModelState, '/gazebo/set_model_state')
-        while not self.client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('Esperando al servicio /gazebo/set_model_state...')
+        # Ruta absoluta al archivo YAML
+        base_path = os.path.dirname(os.path.abspath(__file__))
+        yaml_path = os.path.join(base_path, '../../../rmf_nayar/maps/nayar/nayar.building.yaml')
 
-        # 2. Suscribirse al topic /ascensor_planta (tipo String)
-        self.subscription = self.create_subscription(
-            String,
-            '/ascensor_planta',
-            self.listener_callback,
-            10
-        )
-
-    def listener_callback(self, msg):
-        planta = msg.data.strip()
-        self.get_logger().info(f'Recibida solicitud para mover a planta: {planta}')
-
-        # 3. Convertir planta a altura en el eje Z (por ejemplo, planta 0 = 0.0, planta 1 = 2.5, etc.)
+        # Leer alturas desde el YAML
+        self.plantas = {}
         try:
-            planta_num = int(planta)
-            altura_z = planta_num * 2.5  # Ajusta este valor según tu simulación
-        except ValueError:
-            self.get_logger().warn('El mensaje no es un número de planta válido.')
+            with open(yaml_path, 'r') as f:
+                data = yaml.safe_load(f)
+                if 'levels' in data:
+                    for nivel, props in data['levels'].items():
+                        self.plantas[nivel.lower()] = props.get('elevation', 0.0)
+                self.get_logger().info(f'Plantas cargadas: {self.plantas}')
+        except Exception as e:
+            self.get_logger().error(f'Error leyendo el archivo YAML: {e}')
+
+        # Cliente al servicio de Gazebo
+        self.client = self.create_client(SetEntityState, '/gazebo/set_entity_state')
+        while not self.client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Esperando al servicio /gazebo/set_entity_state...')
+
+        # Suscripción al tópico
+        self.sub = self.create_subscription(String, '/ascensor_planta', self.planta_callback, 10)
+        self.get_logger().info('ElevatorMover listo y escuchando plantas (ej: planta2)')
+
+    def planta_callback(self, msg):
+        nombre_planta = msg.data.strip().lower()
+        if nombre_planta not in self.plantas:
+            self.get_logger().warn(f'Planta desconocida: {nombre_planta}')
             return
 
-        # 4. Crear el mensaje ModelState
-        state = ModelState()
-        state.model_name = 'lift1'
-        state.pose = Pose()
+        altura = self.plantas[nombre_planta]
+        state = EntityState()
+        state.name = 'lift1'
         state.pose.position.x = 0.0
         state.pose.position.y = 0.0
-        state.pose.position.z = altura_z
-        state.pose.orientation.x = 0.0
-        state.pose.orientation.y = 0.0
-        state.pose.orientation.z = 0.0
+        state.pose.position.z = altura
         state.pose.orientation.w = 1.0
-        state.twist = Twist()
-        state.reference_frame = 'world'
 
-        # 5. Enviar la solicitud al servicio
-        request = SetModelState.Request()
-        request.model_state = state
-        future = self.client.call_async(request)
+        req = SetEntityState.Request()
+        req.state = state
 
-        self.get_logger().info(f'Moviendo el ascensor a planta {planta_num} (Z={altura_z})')
+        self.client.call_async(req)
+        self.get_logger().info(f'Moviendo a {nombre_planta} (z = {altura})')
 
 def main(args=None):
     rclpy.init(args=args)
     node = ElevatorMover()
     rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
 

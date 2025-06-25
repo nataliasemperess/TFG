@@ -1,26 +1,33 @@
-FROM ghcr.io/open-rmf/rmf/rmf_demos:latest
+FROM osrf/ros:humble-desktop
 
-# Eliminar fuentes conflictivas de ROS
-RUN grep -lr "packages.ros.org" /etc/apt/sources.list.d/ | xargs rm -f || true && \
-    sed -i '/packages.ros.org/ d' /etc/apt/sources.list
+# Evita interacción con apt
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Añadir clave GPG actualizada de ROS
-RUN curl -fsSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
-    -o /usr/share/keyrings/ros-archive-keyring.gpg && \
-    echo "deb [signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu noble main" \
-    > /etc/apt/sources.list.d/ros2.list && \
-    apt-get update
+# Instala dependencias básicas
+RUN apt update && apt install -y \
+    git \
+    python3-pip \
+    build-essential \
+    ros-humble-gazebo-ros-pkgs \
+    ros-humble-xacro \
+    ros-humble-joint-state-publisher-gui \
+    ros-humble-rmw-cyclonedds-cpp \
+    ros-humble-tf-transformations \
+    net-tools \
+    nano \
+    curl \
+    wget \
+    lsb-release \
+    sudo \
+    && rm -rf /var/lib/apt/lists/*
 
-# Herramientas útiles y localización
-RUN apt-get install -y sudo locales && \
-    locale-gen en_US.UTF-8
-ENV LANG=en_US.UTF-8
-ENV LANGUAGE=en_US:en
-ENV LC_ALL=en_US.UTF-8
+# Instala PyYAML para scripts
+RUN pip3 install pyyaml
 
-# Crear usuario compatible con rocker
-RUN useradd -ms /bin/bash usuario && \
-    echo 'usuario ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-USER usuario
-WORKDIR /home/usuario
+# Crea el workspace dentro del contenedor (montaremos el real con volumen)
+WORKDIR /TFG_ws
+
+# Fuentes y entorno
+SHELL ["/bin/bash", "-c"]
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
