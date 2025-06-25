@@ -11,20 +11,30 @@ docker build -t rmf_demos_humble -f Dockerfile.rmf_fixed .
 
 
 ```bash
-rocker --nvidia --x11 \
-  --name rmf_demos_humble \
-  -v $(pwd)/TFG_ws:/TFG_ws \
+cd ~/Documentos/GitHub/TFG/simulación
+
+rocker --nvidia --x11 --name rmf_humble_container \
+  -e ROS_DOMAIN_ID=7 \
   -e ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST \
   --network host \
-  rmf_demos_humble
+  --user \
+  --volume `pwd`/TFG_ws:/TFG_ws \
+  --mode interactive \
+  -- rmf_humble \
+  bash
 
 ```
 
 ```bash
+
 apt update
 apt install -y ros-humble-rmf-building-map-tools
 apt update
 apt install -y ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control
+
+sudo apt update
+sudo apt install nlohmann-json3-dev
+
 
 ```
 
