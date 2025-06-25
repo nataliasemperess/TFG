@@ -75,19 +75,16 @@ levels:
       - {dispensable: false, model_name: OpenRobotics/Sofa, name: OpenRobotics/Sofa, static: true, x: 222.38, y: 445.589, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: OpenRobotics/Sofa, name: OpenRobotics/Sofa, static: true, x: 251.21600000000001, y: 445.87200000000001, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: OpenRobotics/Sofa, name: OpenRobotics/Sofa, static: true, x: 274.39800000000002, y: 418.44999999999999, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Standing person, name: OpenRobotics/Standing person, static: true, x: 141.095, y: 300.15600000000001, yaw: -0, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Standing person, name: OpenRobotics/Standing person, static: true, x: 156.19999999999999, y: 324.88200000000001, yaw: -3.1415999999999999, z: 0}
       - {dispensable: false, model_name: OpenRobotics/Standing person, name: OpenRobotics/Standing person, static: true, x: 375.56700000000001, y: 380.97500000000002, yaw: -0, z: 0}
       - {dispensable: false, model_name: OpenRobotics/Standing person, name: OpenRobotics/Standing person, static: true, x: 140.12299999999999, y: 326.31099999999998, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/VisitorKidSit, name: OpenRobotics/VisitorKidSit, static: true, x: 217.93799999999999, y: 441.63999999999999, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/VisitorKidSit, name: OpenRobotics/VisitorKidSit, static: true, x: 270.55099999999999, y: 413.36500000000001, yaw: -1.5708, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/VisitorKidSit, name: OpenRobotics/VisitorKidSit, static: true, x: 227.24299999999999, y: 441.81900000000002, yaw: 3.1415999999999999, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/VisitorKidSit, name: OpenRobotics/VisitorKidSit, static: true, x: 218.53200000000001, y: 445.00599999999997, yaw: -3.1415999999999999, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/VisitorKidSit, name: OpenRobotics/VisitorKidSit, static: true, x: 272.45400000000001, y: 413.721, yaw: -1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/VisitorKidSit, name: OpenRobotics/VisitorKidSit, static: true, x: 227.26499999999999, y: 443.98899999999998, yaw: 3.1415999999999999, z: 0}
       - {dispensable: false, model_name: OpenRobotics/FemaleVisitorSit, name: OpenRobotics/FemaleVisitorSit, static: true, x: 272.13, y: 422.31400000000002, yaw: -1.5708, z: 0}
       - {dispensable: false, model_name: OpenRobotics/FemaleVisitorSit, name: OpenRobotics/FemaleVisitorSit, static: true, x: 254.68700000000001, y: 442.91800000000001, yaw: -3.1415999999999999, z: 0}
       - {dispensable: false, model_name: OpenRobotics/Toilet, name: OpenRobotics/Toilet, static: true, x: 412.084, y: 218.59, yaw: -1.5708, z: 0}
       - {dispensable: false, model_name: OpenRobotics/BathroomSink, name: OpenRobotics/BathroomSink, static: true, x: 384.06299999999999, y: 237.40799999999999, yaw: 1.5708, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/EscalatorStart, name: OpenRobotics/EscalatorStart, static: true, x: 346.90300000000002, y: 226.042, yaw: 0.016199999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Table, name: OpenRobotics/Table, static: true, x: 131.76599999999999, y: 311.60599999999999, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Table, name: OpenRobotics/Table, static: true, x: 151.27199999999999, y: 311.60599999999999, yaw: 0, z: 0}
     vertices:
       - [38.673000000000002, 182.74100000000001, 0, ""]
       - [648.63999999999999, 182.74100000000001, 0, ""]
@@ -423,52 +420,15 @@ levels:
       - {dispensable: false, model_name: OpenRobotics/BathroomSink, name: OpenRobotics/BathroomSink, static: true, x: 433.29199999999997, y: 249.59, yaw: -0, z: 0}
       - {dispensable: false, model_name: OpenRobotics/BathroomSink, name: OpenRobotics/BathroomSink, static: true, x: 444.358, y: 249.41900000000001, yaw: -0, z: 0}
       - {dispensable: false, model_name: OpenRobotics/BathroomSink, name: OpenRobotics/BathroomSink, static: true, x: 455.76499999999999, y: 249.41900000000001, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 350.46899999999999, y: 409.19299999999998, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 350.46899999999999, y: 398.06900000000002, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 350.46899999999999, y: 387.31599999999997, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 350.82100000000003, y: 432.28100000000001, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 400.34100000000001, y: 386.94600000000003, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 350.548, y: 420.53899999999999, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 400.34100000000001, y: 419.94600000000003, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 400.34100000000001, y: 408.822, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 400.34100000000001, y: 397.88400000000001, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 581.70699999999999, y: 448.14699999999999, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 400.34100000000001, y: 433.10899999999998, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 360.666, y: 387.31599999999997, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 360.666, y: 398.44, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 360.48000000000002, y: 409.56400000000002, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 360.48000000000002, y: 420.87299999999999, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 360.10500000000002, y: 432.28100000000001, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 581.572, y: 436.40199999999999, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 413.35399999999998, y: 386.678, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 413.31799999999998, y: 397.88400000000001, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 413.31799999999998, y: 409.935, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 413.31799999999998, y: 421.61500000000001, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 413.13299999999998, y: 433.851, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 592.23699999999997, y: 437.34699999999998, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 592.50699999999995, y: 449.49700000000001, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 339.69400000000002, y: 388.16199999999998, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 340.95400000000001, y: 398.78199999999998, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 340.774, y: 409.22199999999998, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 340.41399999999999, y: 422.00200000000001, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 340.774, y: 433.34199999999998, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 371.91399999999999, y: 387.08199999999999, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 371.91399999999999, y: 398.24200000000002, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 370.834, y: 410.30200000000002, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 370.29399999999998, y: 420.56200000000001, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 370.11399999999998, y: 433.88200000000001, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 391.17399999999998, y: 387.62200000000001, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 390.45400000000001, y: 398.96199999999999, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 391.23500000000001, y: 408.79700000000003, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 390.416, y: 421.08499999999998, yaw: -0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 390.274, y: 433.88200000000001, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 422.67500000000001, y: 434.78199999999998, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 423.03500000000003, y: 422.00200000000001, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 423.39499999999998, y: 409.40199999999999, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 422.85500000000002, y: 397.34199999999998, yaw: -3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/DeskChair, name: OpenRobotics/DeskChair, static: true, x: 421.77499999999998, y: 386.54199999999997, yaw: 3.1415999999999999, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/EscalatorStart, name: OpenRobotics/EscalatorStart, static: true, x: 347.298, y: 225.52600000000001, yaw: 0, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/EscalatorEnd, name: OpenRobotics/EscalatorEnd, static: true, x: 348.12200000000001, y: 243.648, yaw: -0, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 349.94, y: 436.02300000000002, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 349.53199999999998, y: 413.17500000000001, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 349.53199999999998, y: 388.69400000000002, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 393.18900000000002, y: 386.654, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 393.59699999999998, y: 411.95100000000002, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 394.005, y: 438.87900000000002, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 431.94999999999999, y: 438.471, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 431.13400000000001, y: 409.50299999999999, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/Desk, name: OpenRobotics/Desk, static: true, x: 429.09399999999999, y: 386.654, yaw: 1.5708, z: 0}
     vertices:
       - [38.673000000000002, 182.74100000000001, 0, ""]
       - [648.63999999999999, 182.74100000000001, 0, ""]

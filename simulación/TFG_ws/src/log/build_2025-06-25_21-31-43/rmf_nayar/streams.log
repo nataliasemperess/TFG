@@ -1,0 +1,420 @@
+[0.214s] Invoking command in '/TFG_ws/src/build/rmf_nayar': CMAKE_PREFIX_PATH=/TFG_ws/install/rmf_nayar:/rmf_demos_ws/install/rmf_workcell_msgs:/rmf_demos_ws/install/rmf_demos_gz:/rmf_demos_ws/install/rmf_demos:/rmf_demos_ws/install/rmf_reservation_node:/rmf_demos_ws/install/rmf_fleet_adapter_python:/rmf_demos_ws/install/rmf_fleet_adapter:/rmf_demos_ws/install/rmf_task_ros2:/rmf_demos_ws/install/rmf_websocket:/rmf_demos_ws/install/rmf_visualization:/rmf_demos_ws/install/rmf_visualization_schedule:/rmf_demos_ws/install/rmf_visualization_rviz2_plugins:/rmf_demos_ws/install/rmf_visualization_obstacles:/rmf_demos_ws/install/rmf_visualization_navgraphs:/rmf_demos_ws/install/rmf_visualization_floorplans:/rmf_demos_ws/install/rmf_visualization_fleet_states:/rmf_demos_ws/install/rmf_visualization_msgs:/rmf_demos_ws/install/rmf_traffic_ros2:/rmf_demos_ws/install/rmf_task_sequence:/rmf_demos_ws/install/rmf_task:/rmf_demos_ws/install/rmf_battery:/rmf_demos_ws/install/rmf_traffic:/rmf_demos_ws/install/rmf_utils:/rmf_demos_ws/install/rmf_traffic_msgs:/rmf_demos_ws/install/rmf_traffic_editor_test_maps:/rmf_demos_ws/install/rmf_traffic_editor_assets:/rmf_demos_ws/install/rmf_traffic_editor:/rmf_demos_ws/install/rmf_task_msgs:/rmf_demos_ws/install/rmf_site_map_msgs:/rmf_demos_ws/install/rmf_scheduler_msgs:/rmf_demos_ws/install/rmf_robot_sim_gz_plugins:/rmf_demos_ws/install/rmf_robot_sim_common:/rmf_demos_ws/install/rmf_reservation_msgs:/rmf_demos_ws/install/rmf_obstacle_msgs:/rmf_demos_ws/install/rmf_building_sim_gz_plugins:/rmf_demos_ws/install/rmf_lift_msgs:/rmf_demos_ws/install/rmf_ingestor_msgs:/rmf_demos_ws/install/rmf_fleet_msgs:/rmf_demos_ws/install/rmf_door_msgs:/rmf_demos_ws/install/rmf_dispenser_msgs:/rmf_demos_ws/install/rmf_demos_maps:/rmf_demos_ws/install/rmf_demos_assets:/rmf_demos_ws/install/rmf_charger_msgs:/rmf_demos_ws/install/rmf_building_map_msgs:/rmf_demos_ws/install/rmf_api_msgs:/rmf_demos_ws/install/pybind11_json_vendor:/rmf_demos_ws/install/nlohmann_json_schema_validator_vendor:/TFG_ws/install/mqtt_ros_bridge:/rmf_demos_ws/install/rmf_demos_fleet_adapter:/rmf_demos_ws/install/rmf_visualization_building_systems:/rmf_demos_ws/install/rmf_traffic_examples:/rmf_demos_ws/install/rmf_demos_bridges:/rmf_demos_ws/install/rmf_demos_tasks:/rmf_demos_ws/install/rmf_building_map_tools:/rmf_demos_ws/install/rmf_charging_schedule:/opt/ros/jazzy:/rmf_demos_ws/install/menge_vendor:/rmf_demos_ws/install/ament_cmake_catch2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor /usr/bin/cmake /TFG_ws/src/rmf_nayar -DCMAKE_INSTALL_PREFIX=/TFG_ws/src/install/rmf_nayar
+[0.289s] -- The C compiler identification is GNU 13.3.0
+[0.350s] -- The CXX compiler identification is GNU 13.3.0
+[0.372s] -- Detecting C compiler ABI info
+[0.506s] -- Detecting C compiler ABI info - done
+[0.514s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.514s] -- Detecting C compile features
+[0.514s] -- Detecting C compile features - done
+[0.527s] -- Detecting CXX compiler ABI info
+[0.670s] -- Detecting CXX compiler ABI info - done
+[0.678s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.678s] -- Detecting CXX compile features
+[0.679s] -- Detecting CXX compile features - done
+[0.690s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.912s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.221s] [0mBUILDING WORLDFILE WITH COMMAND: ros2 run rmf_building_map_tools building_map_generator gazebo /TFG_ws/src/rmf_nayar/maps/nayar/nayar.building.yaml /TFG_ws/src/build/rmf_nayar/maps/nayar/nayar.world /TFG_ws/src/build/rmf_nayar/maps/nayar/models[0m
+[1.221s] [0mDOWNLOADING MODELS WITH COMMAND: ros2 run rmf_building_map_tools building_map_model_downloader /TFG_ws/src/rmf_nayar/maps/nayar/nayar.building.yaml[0m
+[1.221s] [0mBUILDING WORLDFILE WITH COMMAND: ros2 run rmf_building_map_tools building_map_generator gazebo /TFG_ws/src/rmf_nayar/maps/nayar/nayar3.building.yaml /TFG_ws/src/build/rmf_nayar/maps/nayar3/nayar3.world /TFG_ws/src/build/rmf_nayar/maps/nayar3/models[0m
+[1.221s] [0mDOWNLOADING MODELS WITH COMMAND: ros2 run rmf_building_map_tools building_map_model_downloader /TFG_ws/src/rmf_nayar/maps/nayar/nayar3.building.yaml[0m
+[1.221s] -- Configuring done (1.0s)
+[1.230s] -- Generating done (0.0s)
+[1.238s] -- Build files have been written to: /TFG_ws/src/build/rmf_nayar
+[1.242s] Invoked command in '/TFG_ws/src/build/rmf_nayar' returned '0': CMAKE_PREFIX_PATH=/TFG_ws/install/rmf_nayar:/rmf_demos_ws/install/rmf_workcell_msgs:/rmf_demos_ws/install/rmf_demos_gz:/rmf_demos_ws/install/rmf_demos:/rmf_demos_ws/install/rmf_reservation_node:/rmf_demos_ws/install/rmf_fleet_adapter_python:/rmf_demos_ws/install/rmf_fleet_adapter:/rmf_demos_ws/install/rmf_task_ros2:/rmf_demos_ws/install/rmf_websocket:/rmf_demos_ws/install/rmf_visualization:/rmf_demos_ws/install/rmf_visualization_schedule:/rmf_demos_ws/install/rmf_visualization_rviz2_plugins:/rmf_demos_ws/install/rmf_visualization_obstacles:/rmf_demos_ws/install/rmf_visualization_navgraphs:/rmf_demos_ws/install/rmf_visualization_floorplans:/rmf_demos_ws/install/rmf_visualization_fleet_states:/rmf_demos_ws/install/rmf_visualization_msgs:/rmf_demos_ws/install/rmf_traffic_ros2:/rmf_demos_ws/install/rmf_task_sequence:/rmf_demos_ws/install/rmf_task:/rmf_demos_ws/install/rmf_battery:/rmf_demos_ws/install/rmf_traffic:/rmf_demos_ws/install/rmf_utils:/rmf_demos_ws/install/rmf_traffic_msgs:/rmf_demos_ws/install/rmf_traffic_editor_test_maps:/rmf_demos_ws/install/rmf_traffic_editor_assets:/rmf_demos_ws/install/rmf_traffic_editor:/rmf_demos_ws/install/rmf_task_msgs:/rmf_demos_ws/install/rmf_site_map_msgs:/rmf_demos_ws/install/rmf_scheduler_msgs:/rmf_demos_ws/install/rmf_robot_sim_gz_plugins:/rmf_demos_ws/install/rmf_robot_sim_common:/rmf_demos_ws/install/rmf_reservation_msgs:/rmf_demos_ws/install/rmf_obstacle_msgs:/rmf_demos_ws/install/rmf_building_sim_gz_plugins:/rmf_demos_ws/install/rmf_lift_msgs:/rmf_demos_ws/install/rmf_ingestor_msgs:/rmf_demos_ws/install/rmf_fleet_msgs:/rmf_demos_ws/install/rmf_door_msgs:/rmf_demos_ws/install/rmf_dispenser_msgs:/rmf_demos_ws/install/rmf_demos_maps:/rmf_demos_ws/install/rmf_demos_assets:/rmf_demos_ws/install/rmf_charger_msgs:/rmf_demos_ws/install/rmf_building_map_msgs:/rmf_demos_ws/install/rmf_api_msgs:/rmf_demos_ws/install/pybind11_json_vendor:/rmf_demos_ws/install/nlohmann_json_schema_validator_vendor:/TFG_ws/install/mqtt_ros_bridge:/rmf_demos_ws/install/rmf_demos_fleet_adapter:/rmf_demos_ws/install/rmf_visualization_building_systems:/rmf_demos_ws/install/rmf_traffic_examples:/rmf_demos_ws/install/rmf_demos_bridges:/rmf_demos_ws/install/rmf_demos_tasks:/rmf_demos_ws/install/rmf_building_map_tools:/rmf_demos_ws/install/rmf_charging_schedule:/opt/ros/jazzy:/rmf_demos_ws/install/menge_vendor:/rmf_demos_ws/install/ament_cmake_catch2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor /usr/bin/cmake /TFG_ws/src/rmf_nayar -DCMAKE_INSTALL_PREFIX=/TFG_ws/src/install/rmf_nayar
+[1.244s] Invoking command in '/TFG_ws/src/build/rmf_nayar': CMAKE_PREFIX_PATH=/TFG_ws/install/rmf_nayar:/rmf_demos_ws/install/rmf_workcell_msgs:/rmf_demos_ws/install/rmf_demos_gz:/rmf_demos_ws/install/rmf_demos:/rmf_demos_ws/install/rmf_reservation_node:/rmf_demos_ws/install/rmf_fleet_adapter_python:/rmf_demos_ws/install/rmf_fleet_adapter:/rmf_demos_ws/install/rmf_task_ros2:/rmf_demos_ws/install/rmf_websocket:/rmf_demos_ws/install/rmf_visualization:/rmf_demos_ws/install/rmf_visualization_schedule:/rmf_demos_ws/install/rmf_visualization_rviz2_plugins:/rmf_demos_ws/install/rmf_visualization_obstacles:/rmf_demos_ws/install/rmf_visualization_navgraphs:/rmf_demos_ws/install/rmf_visualization_floorplans:/rmf_demos_ws/install/rmf_visualization_fleet_states:/rmf_demos_ws/install/rmf_visualization_msgs:/rmf_demos_ws/install/rmf_traffic_ros2:/rmf_demos_ws/install/rmf_task_sequence:/rmf_demos_ws/install/rmf_task:/rmf_demos_ws/install/rmf_battery:/rmf_demos_ws/install/rmf_traffic:/rmf_demos_ws/install/rmf_utils:/rmf_demos_ws/install/rmf_traffic_msgs:/rmf_demos_ws/install/rmf_traffic_editor_test_maps:/rmf_demos_ws/install/rmf_traffic_editor_assets:/rmf_demos_ws/install/rmf_traffic_editor:/rmf_demos_ws/install/rmf_task_msgs:/rmf_demos_ws/install/rmf_site_map_msgs:/rmf_demos_ws/install/rmf_scheduler_msgs:/rmf_demos_ws/install/rmf_robot_sim_gz_plugins:/rmf_demos_ws/install/rmf_robot_sim_common:/rmf_demos_ws/install/rmf_reservation_msgs:/rmf_demos_ws/install/rmf_obstacle_msgs:/rmf_demos_ws/install/rmf_building_sim_gz_plugins:/rmf_demos_ws/install/rmf_lift_msgs:/rmf_demos_ws/install/rmf_ingestor_msgs:/rmf_demos_ws/install/rmf_fleet_msgs:/rmf_demos_ws/install/rmf_door_msgs:/rmf_demos_ws/install/rmf_dispenser_msgs:/rmf_demos_ws/install/rmf_demos_maps:/rmf_demos_ws/install/rmf_demos_assets:/rmf_demos_ws/install/rmf_charger_msgs:/rmf_demos_ws/install/rmf_building_map_msgs:/rmf_demos_ws/install/rmf_api_msgs:/rmf_demos_ws/install/pybind11_json_vendor:/rmf_demos_ws/install/nlohmann_json_schema_validator_vendor:/TFG_ws/install/mqtt_ros_bridge:/rmf_demos_ws/install/rmf_demos_fleet_adapter:/rmf_demos_ws/install/rmf_visualization_building_systems:/rmf_demos_ws/install/rmf_traffic_examples:/rmf_demos_ws/install/rmf_demos_bridges:/rmf_demos_ws/install/rmf_demos_tasks:/rmf_demos_ws/install/rmf_building_map_tools:/rmf_demos_ws/install/rmf_charging_schedule:/opt/ros/jazzy:/rmf_demos_ws/install/menge_vendor:/rmf_demos_ws/install/ament_cmake_catch2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor /usr/bin/cmake --build /TFG_ws/src/build/rmf_nayar -- -j6 -l6
+[1.337s] [ 66%] [34m[1mGenerating maps/nayar/nayar.world[0m
+[1.337s] [ 66%] [34m[1mGenerating maps/nayar/nav_graphs/phony[0m
+[1.337s] [ 66%] [34m[1mGenerating maps/nayar3/nav_graphs/phony[0m
+[1.338s] [ 66%] [34m[1mGenerating maps/nayar3/nayar3.world[0m
+[1.799s] generating /TFG_ws/src/build/rmf_nayar/maps/nayar/nayar.world from /TFG_ws/src/rmf_nayar/maps/nayar/nayar.building.yaml
+[1.799s] generating /TFG_ws/src/build/rmf_nayar/maps/nayar3/nayar3.world from /TFG_ws/src/rmf_nayar/maps/nayar/nayar3.building.yaml
+[1.811s] building name: nayar
+[1.811s] coordinate system: reference_image
+[1.811s] parsing level Planta0
+[1.811s] parsing level Sotano
+[1.811s] calculating levels relative to Planta0
+[1.811s] level Planta0 scale: 0.05532403805177346
+[1.812s] calculating level Sotano offset and scale...
+[1.812s]   0 common fiducials:
+[1.812s] Transform.set_from_fiducials()
+[1.812s]   0 fiducial pairs:
+[1.812s] Bearings:
+[1.812s] []
+[1.812s] building name: nayar
+[1.812s] coordinate system: reference_image
+[1.812s] parsing level Planta0
+[1.812s] parsing level Sotano
+[1.812s] calculating levels relative to Planta0
+[1.812s] level Planta0 scale: 0.05532403805177346
+[1.813s] calculating level Sotano offset and scale...
+[1.813s]   0 common fiducials:
+[1.813s] Transform.set_from_fiducials()
+[1.813s]   0 fiducial pairs:
+[1.813s] Bearings:
+[1.813s] []
+[1.813s] generating nav data
+[1.813s] generating model of level Planta0 in /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0
+[1.814s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0/model.config
+[1.814s] generating floor polygon 1 on floor nayar_Planta0
+[1.814s] hole vertices: []
+[1.814s] lift vertices: {}
+[1.815s] [[0, 3, 2], [0, 2, 1]]
+[1.815s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/floor_1.obj
+[1.816s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/blue_linoleum.png
+[1.816s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/floor_1.mtl
+[1.816s] Walls Generation, wall params list: [{'alpha': <building_map.param_value.ParamValue object at 0x72638c5acec0>, 'texture_height': <building_map.param_value.ParamValue object at 0x72638c37ca70>, 'texture_name': <building_map.param_value.ParamValue object at 0x72638c37cad0>, 'texture_scale': <building_map.param_value.ParamValue object at 0x72638c37cb00>, 'texture_width': <building_map.param_value.ParamValue object at 0x72638c37cb30>}]
+[1.817s] generating wall: 1 on floor: nayar_Planta0
+[1.817s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/default.png
+[1.817s] generate_wall_visual_mesh(nayar_Planta0, /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0)
+[1.817s]   generating /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/wall_1.obj
+[1.822s]   generating /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/wall_1.mtl
+[1.823s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Planta0/model.sdf
+[1.823s] generating model of level Sotano in /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano
+[1.823s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano/model.config
+[1.823s] generating floor polygon 1 on floor nayar_Sotano
+[1.823s] hole vertices: []
+[1.823s] lift vertices: {}
+[1.824s] [[0, 3, 2], [0, 2, 1]]
+[1.826s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/floor_1.obj
+[1.827s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/blue_linoleum.png
+[1.827s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/floor_1.mtl
+[1.827s] Walls Generation, wall params list: [{'alpha': <building_map.param_value.ParamValue object at 0x72638c3c1c10>, 'texture_height': <building_map.param_value.ParamValue object at 0x72638c3c1ca0>, 'texture_name': <building_map.param_value.ParamValue object at 0x72638c3c1c70>, 'texture_scale': <building_map.param_value.ParamValue object at 0x72638c3c1cd0>, 'texture_width': <building_map.param_value.ParamValue object at 0x72638c3c1d30>}]
+[1.827s] generating wall: 1 on floor: nayar_Sotano
+[1.828s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/default.png
+[1.828s] generate_wall_visual_mesh(nayar_Sotano, /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano)
+[1.828s]   generating /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/wall_1.obj
+[1.829s]   generating /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/wall_1.mtl
+[1.829s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar3/models/nayar_Sotano/model.sdf
+[1.830s] generate door name=entrada_principal type=double_hinged
+[1.830s] Door(entrada_principal)
+[1.830s] generate door name=puerta_peque type=hinged
+[1.830s] Door(puerta_peque)
+[1.830s] generate door name=garaje type=double_hinged
+[1.830s] Door(garaje)
+[1.832s] 20729 bytes written to /TFG_ws/src/build/rmf_nayar/maps/nayar3/nayar3.world
+[1.846s] building name: nayar2
+[1.846s] coordinate system: reference_image
+[1.846s] parsing level planta0
+[1.847s] parsing level planta1
+[1.847s] calculating levels relative to planta0
+[1.847s] level planta0 scale: 0.07742772056183925
+[1.847s] calculating level planta1 offset and scale...
+[1.847s]   2 common fiducials:
+[1.848s] Transform.set_from_fiducials()
+[1.848s]   2 fiducial pairs:
+[1.848s]     (475.69, -339.15) -> (475.8, -338.93)   punto1
+[1.848s]     (119.09, -199.13) -> (119.04, -198.96)   esquina_sup
+[1.848s]     calc dist punto1 <=> esquina_sup
+[1.848s] Bearings:
+[1.848s] [(2.767441424789273, 2.7677014056626033)]
+[1.848s]   0.0002599808733303455
+[1.848s]   Circular mean: -0.0002599808733303455
+[1.848s] Distances:
+[1.849s] [(383.1016756593476, 383.23231116386836)]
+[1.849s] mean relative scale: 1.0003409943438537
+[1.849s] translation: (0.011249, -0.016793)
+[1.849s] building name: nayar2
+[1.849s] coordinate system: reference_image
+[1.849s] parsing level planta0
+[1.849s] parsing level planta1
+[1.849s] calculating levels relative to planta0
+[1.849s] level planta0 scale: 0.07742772056183925
+[1.849s] calculating level planta1 offset and scale...
+[1.849s]   2 common fiducials:
+[1.849s] Transform.set_from_fiducials()
+[1.849s]   2 fiducial pairs:
+[1.850s]     (475.69, -339.15) -> (475.8, -338.93)   punto1
+[1.850s]     (119.09, -199.13) -> (119.04, -198.96)   esquina_sup
+[1.850s]     calc dist punto1 <=> esquina_sup
+[1.850s] Bearings:
+[1.850s] [(2.767441424789273, 2.7677014056626033)]
+[1.850s]   0.0002599808733303455
+[1.850s]   Circular mean: -0.0002599808733303455
+[1.850s] Distances:
+[1.850s] [(383.1016756593476, 383.23231116386836)]
+[1.850s] mean relative scale: 1.0003409943438537
+[1.850s] translation: (0.011249, -0.016793)
+[1.850s] parsing lift lift1
+[1.850s] generating nav data
+[1.851s] hooray, we found an intersection: t=0.548, u=0.451
+[1.851s]   (141.686,-241.967),(80.873,-223.777) and (112.645,-217.486),(103.172,-249.657)
+[1.851s] parsing lift lift1
+[1.851s] found intersection with door entrada_empleados!
+[1.851s] hooray, we found an intersection: t=0.69, u=0.529
+[1.851s]   (136.043,-410.387),(59.311,-467.204) and (65.972,-424.903),(98.383,-471.54)
+[1.851s] found intersection with door entrada_principal!
+[1.852s] hooray, we found an intersection: t=0.254, u=0.435
+[1.852s]   (405.482,-314.311),(405.482,-250.544) and (394.664,-298.284),(419.528,-297.85)
+[1.852s] found intersection with door baños!
+[1.852s] hooray, we found an intersection: t=0.845, u=0.498
+[1.852s]   (376.639,-428.442),(376.639,-500.476) and (343.68,-489.298),(409.887,-489.298)
+[1.852s] found intersection with door garaje!
+[1.852s] hooray, we found an intersection: t=0.512, u=0.469
+[1.852s]   (172.323,-340.413),(172.323,-235.185) and (151.58,-286.567),(195.764,-286.567)
+[1.852s] found intersection with door sala_reuniones!
+[1.852s] generating model of level planta0 in /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0
+[1.852s] writing /TFG_ws/src/build/rmf_nayar/maps/nayar/nav_graphs/0.yaml
+[1.852s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0/model.config
+[1.853s] generating floor polygon 1 on floor nayar2_planta0
+[1.853s] hole vertices: []
+[1.853s] lift vertices: {'lift1': [(18.001256229020964, -16.089033706738554), (15.301263933774127, -16.08258346583539), (15.292663612569914, -19.68257319283118), (17.99265590781675, -19.68902343373434)]}
+[1.856s] [[0, 3, 4], [0, 4, 5], [0, 5, 6], [0, 6, 1], [1, 6, 7], [1, 7, 2], [2, 7, 3], [3, 7, 4]]
+[1.857s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/floor_1.obj
+[1.858s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/blue_linoleum.png
+[1.858s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/floor_1.mtl
+[1.859s] Walls Generation, wall params list: [{'alpha': <building_map.param_value.ParamValue object at 0x758ce538cad0>, 'texture_height': <building_map.param_value.ParamValue object at 0x758ce538cb00>, 'texture_name': <building_map.param_value.ParamValue object at 0x758ce538cb30>, 'texture_scale': <building_map.param_value.ParamValue object at 0x758ce538cb90>, 'texture_width': <building_map.param_value.ParamValue object at 0x758ce538cb60>}]
+[1.859s] generating wall: 1 on floor: nayar2_planta0
+[1.860s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/default.png
+[1.860s] generate_wall_visual_mesh(nayar2_planta0, /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0)
+[1.860s]   generating /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/wall_1.obj
+[1.865s]   generating /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/wall_1.mtl
+[1.866s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta0/model.sdf
+[1.866s] generating model of level planta1 in /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1
+[1.866s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1/model.config
+[1.866s] generating floor polygon 1 on floor nayar2_planta1
+[1.867s] hole vertices: [[(3.0009135219918917, -14.161966864010905), (9.323965335582713, -15.420608331929321), (8.759010878131047, -16.91748057351616), (7.977846778074719, -19.414166982606584), (6.5018997264262355, -23.80723754459366), (5.634875994542107, -26.68456137159524), (4.061410003808941, -31.349440050649942), (2.994201399710574, -39.9797204706962)], [(4.061410003808941, -31.349440050649942), (5.099108335872551, -32.91995060927369), (7.620449866899286, -36.518684325217755), (8.638504602297845, -38.026339897114525), (2.994201399710574, -39.9797204706962)], [(2.994201399710574, -39.9797204706962), (8.638504602297845, -38.026339897114525), (16.250770369144647, -38.027157920714764), (36.79757117657326, -38.03249969605317), (36.79754046908218, -38.15061411728793), (38.69913621016705, -38.15110849582056), (38.69910324891516, -38.27789186540282), (48.59563660348658, -38.28046477484525), (50.20645512009122, -39.99199475392686)], [(3.0009135219918917, -14.161966864010905), (9.323965335582713, -15.420608331929321), (48.18740258671972, -15.430712082514127), (50.21316724237254, -14.174241147241563)], [(50.21316724237254, -14.174241147241563), (50.20645512009122, -39.99199475392686), (48.59563660348658, -38.28046477484525), (48.59725007487719, -32.07434917260146), (48.38594445890675, -32.07429423718164), (48.3880303145392, -24.051182541565687), (48.185161442942686, -24.051129799538092), (48.18664381387172, -18.349283826615682), (48.18740258671972, -15.430712082514127)]]
+[1.867s] lift vertices: {'lift1': [(18.001256229020964, -16.089033706738554), (15.301263933774127, -16.08258346583539), (15.292663612569914, -19.68257319283118), (17.99265590781675, -19.68902343373434)]}
+[1.895s] [[4, 5, 6], [4, 6, 7], [4, 7, 8], [8, 7, 9], [10, 11, 12], [10, 12, 13], [10, 13, 14], [15, 16, 17], [18, 17, 19], [18, 19, 20], [21, 19, 22], [21, 22, 23], [5, 23, 22], [5, 22, 6], [7, 24, 9], [9, 24, 25], [26, 25, 12], [12, 25, 13], [13, 25, 27], [13, 27, 28], [16, 27, 24], [16, 24, 22], [16, 22, 19], [16, 19, 17], [24, 27, 25]]
+[1.896s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/floor_1.obj
+[1.897s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/blue_linoleum.png
+[1.898s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/floor_1.mtl
+[1.898s] Walls Generation, wall params list: [{'alpha': <building_map.param_value.ParamValue object at 0x758ce53d4cb0>, 'texture_height': <building_map.param_value.ParamValue object at 0x758ce53d4d10>, 'texture_name': <building_map.param_value.ParamValue object at 0x758ce53d4ce0>, 'texture_scale': <building_map.param_value.ParamValue object at 0x758ce53d4d40>, 'texture_width': <building_map.param_value.ParamValue object at 0x758ce53d4d70>}]
+[1.898s] generating wall: 1 on floor: nayar2_planta1
+[1.899s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/default.png
+[1.899s] generate_wall_visual_mesh(nayar2_planta1, /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1)
+[1.899s]   generating /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/wall_1.obj
+[1.902s]   generating /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/wall_1.mtl
+[1.902s]   wrote /TFG_ws/src/build/rmf_nayar/maps/nayar/models/nayar2_planta1/model.sdf
+[1.903s] spawning robot name tinyRobot1 of type TinyRobot
+[1.903s] generate door name=entrada_empleados type=hinged
+[1.903s] Door(entrada_empleados)
+[1.904s] generate door name=entrada_principal type=double_hinged
+[1.904s] Door(entrada_principal)
+[1.904s] generate door name=garaje type=double_hinged
+[1.904s] Door(garaje)
+[1.904s] generate door name=baños type=hinged
+[1.904s] Door(baños)
+[1.904s] generate door name=sala_reuniones type=hinged
+[1.904s] Door(sala_reuniones)
+[1.906s] generate door name=door29922 type=hinged
+[1.906s] Door(door29922)
+[1.907s] generate door name=door22122 type=hinged
+[1.907s] Door(door22122)
+[1.907s] generate door name=door_despacho type=double_hinged
+[1.907s] Door(door_despacho)
+[1.907s] [ 66%] Built target generate_nayar3_nav_graphs
+[1.909s] 58993 bytes written to /TFG_ws/src/build/rmf_nayar/maps/nayar/nayar.world
+[1.946s] [ 66%] Built target generate_nayar_nav_graphs
+[2.385s] building name: nayar
+[2.385s] coordinate system: reference_image
+[2.385s] parsing level Planta0
+[2.385s] parsing level Sotano
+[2.385s] calculating levels relative to Planta0
+[2.386s] level Planta0 scale: 0.05532403805177346
+[2.386s] calculating level Sotano offset and scale...
+[2.386s]   0 common fiducials:
+[2.386s] Transform.set_from_fiducials()
+[2.386s]   0 fiducial pairs:
+[2.386s] Bearings:
+[2.386s] []
+[2.472s] Models: [] are used in crowd_sim
+[2.475s] building name: nayar2
+[2.475s] coordinate system: reference_image
+[2.475s] parsing level planta0
+[2.475s] parsing level planta1
+[2.476s] calculating levels relative to planta0
+[2.476s] level planta0 scale: 0.07742772056183925
+[2.476s] calculating level planta1 offset and scale...
+[2.476s]   2 common fiducials:
+[2.476s] Transform.set_from_fiducials()
+[2.476s]   2 fiducial pairs:
+[2.476s]     (475.69, -339.15) -> (475.8, -338.93)   punto1
+[2.476s]     (119.09, -199.13) -> (119.04, -198.96)   esquina_sup
+[2.476s]     calc dist punto1 <=> esquina_sup
+[2.476s] Bearings:
+[2.477s] [(2.767441424789273, 2.7677014056626033)]
+[2.477s]   0.0002599808733303455
+[2.477s]   Circular mean: -0.0002599808733303455
+[2.477s] Distances:
+[2.477s] [(383.1016756593476, 383.23231116386836)]
+[2.477s] mean relative scale: 1.0003409943438537
+[2.477s] translation: (0.011249, -0.016793)
+[2.478s] parsing lift lift1
+[2.487s] Load success!
+[2.487s] 
+[2.487s] Cache found! Model count: 3018 
+[2.487s] Updating cache...
+[2.487s] Topping up Fuel (updating cache) from: https://fuel.gazebosim.org/1.0/models
+[2.487s] Fetching page: 1
+[2.643s] Models: [] are used in crowd_sim
+[2.657s] Load success!
+[2.658s] 
+[2.658s] Cache found! Model count: 3018 
+[2.658s] Updating cache...
+[2.658s] Topping up Fuel (updating cache) from: https://fuel.gazebosim.org/1.0/models
+[2.658s] Fetching page: 1
+[3.232s] Cached model found! Halting Fuel traversal...
+[3.232s] Writing to cache: /home/usuario/.pit_crew/model_cache.json
+[3.232s] Cached model found! Halting Fuel traversal...
+[3.232s] Writing to cache: /home/usuario/.pit_crew/model_cache.json
+[3.274s] New models cached: 0
+[3.274s] 
+[3.274s] New models cached: 0
+[3.274s] 
+[3.275s] WARNING::pit_crew.get_local_model_name_tuples():276: No local model path given! Using default ~/.gazebo/models/ instead!
+[3.275s] WARNING::pit_crew.get_local_model_name_tuples():276: No local model path given! Using default ~/.gazebo/models/ instead!
+[3.282s] WARNING::pit_crew.get_missing_models():224: Model VisitorKidSit in local model directory is not by the requested author OpenRobotics!
+[3.283s] WARNING::pit_crew.get_missing_models():224: Model AdjTable in local model directory is not by the requested author OpenRobotics!
+[3.283s] WARNING::pit_crew.get_missing_models():224: Model Toilet in local model directory is not by the requested author OpenRobotics!
+[3.283s] WARNING::pit_crew.get_missing_models():224: Model Sofa in local model directory is not by the requested author OpenRobotics!
+[3.283s] WARNING::pit_crew.get_missing_models():224: Model BathroomSink in local model directory is not by the requested author OpenRobotics!
+[3.283s] WARNING::pit_crew.get_missing_models():224: Model Standing person in local model directory is not by the requested author OpenRobotics!
+[3.283s] WARNING::pit_crew.get_missing_models():224: Model FemaleVisitorSit in local model directory is not by the requested author OpenRobotics!
+[3.283s] WARNING::pit_crew.get_missing_models():224: Model Desk in local model directory is not by the requested author OpenRobotics!
+[3.284s] 
+[3.284s] == REQUESTED MODEL REPORT ==
+[3.284s] {'available': [], 'downloadable': [], 'missing': []}
+[3.284s] 
+[3.285s] == THE FOLLOWING MODELS HAVE SPECIFIED AUTHORS ==
+[3.285s] {}
+[3.285s] 
+[3.285s] 
+[3.285s] == REQUESTED MODEL REPORT ==
+[3.285s] {'available': [('VisitorKidSit',
+[3.285s]                 ['/home/usuario/.gazebo/models/VisitorKidSit/']),
+[3.285s]                ('AdjTable', ['/home/usuario/.gazebo/models/AdjTable/']),
+[3.285s]                ('Toilet', ['/home/usuario/.gazebo/models/Toilet/']),
+[3.285s]                ('Sofa', ['/home/usuario/.gazebo/models/Sofa/']),
+[3.286s]                ('BathroomSink', ['/home/usuario/.gazebo/models/BathroomSink/']),
+[3.286s]                ('Standing person',
+[3.286s]                 ['/home/usuario/.gazebo/models/Standing person/']),
+[3.286s]                ('FemaleVisitorSit',
+[3.286s]                 ['/home/usuario/.gazebo/models/FemaleVisitorSit/']),
+[3.286s]                ('Desk', ['/home/usuario/.gazebo/models/Desk/'])],
+[3.286s]  'downloadable': [],
+[3.286s]  'missing': []}
+[3.286s] 
+[3.286s] == THE FOLLOWING MODELS HAVE SPECIFIED AUTHORS ==
+[3.286s] {'adjtable': 'openrobotics',
+[3.286s]  'bathroomsink': 'openrobotics',
+[3.286s]  'desk': 'openrobotics',
+[3.287s]  'femalevisitorsit': 'openrobotics',
+[3.287s]  'sofa': 'openrobotics',
+[3.287s]  'standing person': 'openrobotics',
+[3.287s]  'toilet': 'openrobotics',
+[3.287s]  'visitorkidsit': 'openrobotics'}
+[3.287s] 
+[3.287s] WARNING::building_map_model_downloader.export_downloaded_model():85: /home/usuario/.gazebo/models/VisitorKidSit already exists, skipping...
+[3.287s] WARNING::building_map_model_downloader.export_downloaded_model():85: /home/usuario/.gazebo/models/AdjTable already exists, skipping...
+[3.287s] WARNING::building_map_model_downloader.export_downloaded_model():85: /home/usuario/.gazebo/models/Toilet already exists, skipping...
+[3.287s] WARNING::building_map_model_downloader.export_downloaded_model():85: /home/usuario/.gazebo/models/Sofa already exists, skipping...
+[3.287s] WARNING::building_map_model_downloader.export_downloaded_model():85: /home/usuario/.gazebo/models/BathroomSink already exists, skipping...
+[3.287s] WARNING::building_map_model_downloader.export_downloaded_model():85: /home/usuario/.gazebo/models/Standing person already exists, skipping...
+[3.288s] WARNING::building_map_model_downloader.export_downloaded_model():85: /home/usuario/.gazebo/models/FemaleVisitorSit already exists, skipping...
+[3.288s] WARNING::building_map_model_downloader.export_downloaded_model():85: /home/usuario/.gazebo/models/Desk already exists, skipping...
+[3.363s] [100%] [34m[1mGenerating nayar3_crowdsim[0m
+[3.363s] [100%] [34m[1mGenerating nayar_crowdsim[0m
+[3.809s] Creating output folder path:  /TFG_ws/src/build/rmf_nayar/maps/nayar/config_resource/
+[3.809s] Creating output folder path:  /TFG_ws/src/build/rmf_nayar/maps/nayar3/config_resource/
+[3.883s] crowdsim unable to parse, not attempting to proceed
+[3.967s] crowdsim unable to parse, not attempting to proceed
+[3.991s] crowdsim unable to parse, not attempting to proceed
+[4.033s] [100%] Built target generate_nayar3_crowdsim
+[4.154s] crowdsim unable to parse, not attempting to proceed
+[4.218s] [100%] Built target generate_nayar_crowdsim
+[4.236s] Invoked command in '/TFG_ws/src/build/rmf_nayar' returned '0': CMAKE_PREFIX_PATH=/TFG_ws/install/rmf_nayar:/rmf_demos_ws/install/rmf_workcell_msgs:/rmf_demos_ws/install/rmf_demos_gz:/rmf_demos_ws/install/rmf_demos:/rmf_demos_ws/install/rmf_reservation_node:/rmf_demos_ws/install/rmf_fleet_adapter_python:/rmf_demos_ws/install/rmf_fleet_adapter:/rmf_demos_ws/install/rmf_task_ros2:/rmf_demos_ws/install/rmf_websocket:/rmf_demos_ws/install/rmf_visualization:/rmf_demos_ws/install/rmf_visualization_schedule:/rmf_demos_ws/install/rmf_visualization_rviz2_plugins:/rmf_demos_ws/install/rmf_visualization_obstacles:/rmf_demos_ws/install/rmf_visualization_navgraphs:/rmf_demos_ws/install/rmf_visualization_floorplans:/rmf_demos_ws/install/rmf_visualization_fleet_states:/rmf_demos_ws/install/rmf_visualization_msgs:/rmf_demos_ws/install/rmf_traffic_ros2:/rmf_demos_ws/install/rmf_task_sequence:/rmf_demos_ws/install/rmf_task:/rmf_demos_ws/install/rmf_battery:/rmf_demos_ws/install/rmf_traffic:/rmf_demos_ws/install/rmf_utils:/rmf_demos_ws/install/rmf_traffic_msgs:/rmf_demos_ws/install/rmf_traffic_editor_test_maps:/rmf_demos_ws/install/rmf_traffic_editor_assets:/rmf_demos_ws/install/rmf_traffic_editor:/rmf_demos_ws/install/rmf_task_msgs:/rmf_demos_ws/install/rmf_site_map_msgs:/rmf_demos_ws/install/rmf_scheduler_msgs:/rmf_demos_ws/install/rmf_robot_sim_gz_plugins:/rmf_demos_ws/install/rmf_robot_sim_common:/rmf_demos_ws/install/rmf_reservation_msgs:/rmf_demos_ws/install/rmf_obstacle_msgs:/rmf_demos_ws/install/rmf_building_sim_gz_plugins:/rmf_demos_ws/install/rmf_lift_msgs:/rmf_demos_ws/install/rmf_ingestor_msgs:/rmf_demos_ws/install/rmf_fleet_msgs:/rmf_demos_ws/install/rmf_door_msgs:/rmf_demos_ws/install/rmf_dispenser_msgs:/rmf_demos_ws/install/rmf_demos_maps:/rmf_demos_ws/install/rmf_demos_assets:/rmf_demos_ws/install/rmf_charger_msgs:/rmf_demos_ws/install/rmf_building_map_msgs:/rmf_demos_ws/install/rmf_api_msgs:/rmf_demos_ws/install/pybind11_json_vendor:/rmf_demos_ws/install/nlohmann_json_schema_validator_vendor:/TFG_ws/install/mqtt_ros_bridge:/rmf_demos_ws/install/rmf_demos_fleet_adapter:/rmf_demos_ws/install/rmf_visualization_building_systems:/rmf_demos_ws/install/rmf_traffic_examples:/rmf_demos_ws/install/rmf_demos_bridges:/rmf_demos_ws/install/rmf_demos_tasks:/rmf_demos_ws/install/rmf_building_map_tools:/rmf_demos_ws/install/rmf_charging_schedule:/opt/ros/jazzy:/rmf_demos_ws/install/menge_vendor:/rmf_demos_ws/install/ament_cmake_catch2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor /usr/bin/cmake --build /TFG_ws/src/build/rmf_nayar -- -j6 -l6
+[4.253s] Invoking command in '/TFG_ws/src/build/rmf_nayar': CMAKE_PREFIX_PATH=/TFG_ws/install/rmf_nayar:/rmf_demos_ws/install/rmf_workcell_msgs:/rmf_demos_ws/install/rmf_demos_gz:/rmf_demos_ws/install/rmf_demos:/rmf_demos_ws/install/rmf_reservation_node:/rmf_demos_ws/install/rmf_fleet_adapter_python:/rmf_demos_ws/install/rmf_fleet_adapter:/rmf_demos_ws/install/rmf_task_ros2:/rmf_demos_ws/install/rmf_websocket:/rmf_demos_ws/install/rmf_visualization:/rmf_demos_ws/install/rmf_visualization_schedule:/rmf_demos_ws/install/rmf_visualization_rviz2_plugins:/rmf_demos_ws/install/rmf_visualization_obstacles:/rmf_demos_ws/install/rmf_visualization_navgraphs:/rmf_demos_ws/install/rmf_visualization_floorplans:/rmf_demos_ws/install/rmf_visualization_fleet_states:/rmf_demos_ws/install/rmf_visualization_msgs:/rmf_demos_ws/install/rmf_traffic_ros2:/rmf_demos_ws/install/rmf_task_sequence:/rmf_demos_ws/install/rmf_task:/rmf_demos_ws/install/rmf_battery:/rmf_demos_ws/install/rmf_traffic:/rmf_demos_ws/install/rmf_utils:/rmf_demos_ws/install/rmf_traffic_msgs:/rmf_demos_ws/install/rmf_traffic_editor_test_maps:/rmf_demos_ws/install/rmf_traffic_editor_assets:/rmf_demos_ws/install/rmf_traffic_editor:/rmf_demos_ws/install/rmf_task_msgs:/rmf_demos_ws/install/rmf_site_map_msgs:/rmf_demos_ws/install/rmf_scheduler_msgs:/rmf_demos_ws/install/rmf_robot_sim_gz_plugins:/rmf_demos_ws/install/rmf_robot_sim_common:/rmf_demos_ws/install/rmf_reservation_msgs:/rmf_demos_ws/install/rmf_obstacle_msgs:/rmf_demos_ws/install/rmf_building_sim_gz_plugins:/rmf_demos_ws/install/rmf_lift_msgs:/rmf_demos_ws/install/rmf_ingestor_msgs:/rmf_demos_ws/install/rmf_fleet_msgs:/rmf_demos_ws/install/rmf_door_msgs:/rmf_demos_ws/install/rmf_dispenser_msgs:/rmf_demos_ws/install/rmf_demos_maps:/rmf_demos_ws/install/rmf_demos_assets:/rmf_demos_ws/install/rmf_charger_msgs:/rmf_demos_ws/install/rmf_building_map_msgs:/rmf_demos_ws/install/rmf_api_msgs:/rmf_demos_ws/install/pybind11_json_vendor:/rmf_demos_ws/install/nlohmann_json_schema_validator_vendor:/TFG_ws/install/mqtt_ros_bridge:/rmf_demos_ws/install/rmf_demos_fleet_adapter:/rmf_demos_ws/install/rmf_visualization_building_systems:/rmf_demos_ws/install/rmf_traffic_examples:/rmf_demos_ws/install/rmf_demos_bridges:/rmf_demos_ws/install/rmf_demos_tasks:/rmf_demos_ws/install/rmf_building_map_tools:/rmf_demos_ws/install/rmf_charging_schedule:/opt/ros/jazzy:/rmf_demos_ws/install/menge_vendor:/rmf_demos_ws/install/ament_cmake_catch2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor /usr/bin/cmake --install /TFG_ws/src/build/rmf_nayar
+[4.267s] -- Install configuration: ""
+[4.267s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps
+[4.268s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar
+[4.268s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/nayar.building.yaml
+[4.269s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/planta4.png
+[4.269s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/planta0.png
+[4.270s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/planta3.png
+[4.270s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/sotano.png
+[4.271s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/planta2.png
+[4.271s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/nayar3.building.yaml
+[4.272s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models
+[4.272s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/lift1
+[4.272s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/lift1/lift1.sdf
+[4.273s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/planta1.png
+[4.273s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/launch
+[4.273s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/launch/visualization.launch.xml
+[4.273s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/launch/common.launch.xml
+[4.274s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/launch/simulation.launch.xml
+[4.274s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/launch/nayar.launch.xml
+[4.275s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/config
+[4.275s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/config/nayar.rviz
+[4.275s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/config/tinyRobot_config.yaml
+[4.276s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/config/cleanerBotA_config.yaml
+[4.276s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/ament_index/resource_index/package_run_dependencies/rmf_nayar
+[4.277s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/ament_index/resource_index/parent_prefix_path/rmf_nayar
+[4.277s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/environment/ament_prefix_path.sh
+[4.278s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/environment/ament_prefix_path.dsv
+[4.278s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/environment/path.sh
+[4.278s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/environment/path.dsv
+[4.279s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/local_setup.bash
+[4.279s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/local_setup.sh
+[4.280s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/local_setup.zsh
+[4.280s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/local_setup.dsv
+[4.281s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/package.dsv
+[4.281s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/ament_index/resource_index/packages/rmf_nayar
+[4.282s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/cmake/rmf_nayarConfig.cmake
+[4.282s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/cmake/rmf_nayarConfig-version.cmake
+[4.283s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/package.xml
+[4.283s] -- Up-to-date: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar
+[4.284s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/nav_graphs
+[4.284s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/nav_graphs/0.yaml
+[4.284s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/config_resource
+[4.284s] -- Up-to-date: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models
+[4.284s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0
+[4.284s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes
+[4.285s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/floor_1.mtl
+[4.285s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/default.png
+[4.285s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/wall_1.mtl
+[4.286s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/wall_1.obj
+[4.287s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/blue_linoleum.png
+[4.289s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/model.material
+[4.289s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/meshes/floor_1.obj
+[4.290s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/model.config
+[4.290s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta0/model.sdf
+[4.291s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1
+[4.291s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes
+[4.291s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/floor_1.mtl
+[4.291s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/default.png
+[4.292s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/wall_1.mtl
+[4.292s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/wall_1.obj
+[4.293s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/blue_linoleum.png
+[4.295s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/model.material
+[4.295s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/meshes/floor_1.obj
+[4.296s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/model.config
+[4.296s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/models/nayar2_planta1/model.sdf
+[4.297s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar/nayar.world
+[4.298s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3
+[4.298s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/nav_graphs
+[4.298s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/config_resource
+[4.298s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models
+[4.298s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0
+[4.298s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes
+[4.298s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/floor_1.mtl
+[4.298s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/default.png
+[4.299s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/wall_1.mtl
+[4.299s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/wall_1.obj
+[4.299s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/blue_linoleum.png
+[4.300s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/model.material
+[4.300s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/meshes/floor_1.obj
+[4.300s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/model.config
+[4.301s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Planta0/model.sdf
+[4.301s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano
+[4.301s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes
+[4.301s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/floor_1.mtl
+[4.301s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/default.png
+[4.302s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/wall_1.mtl
+[4.303s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/wall_1.obj
+[4.303s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/blue_linoleum.png
+[4.305s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/model.material
+[4.305s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/meshes/floor_1.obj
+[4.306s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/model.config
+[4.306s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/models/nayar_Sotano/model.sdf
+[4.307s] -- Installing: /TFG_ws/src/install/rmf_nayar/share/rmf_nayar/maps/nayar3/nayar3.world
+[4.309s] Invoked command in '/TFG_ws/src/build/rmf_nayar' returned '0': CMAKE_PREFIX_PATH=/TFG_ws/install/rmf_nayar:/rmf_demos_ws/install/rmf_workcell_msgs:/rmf_demos_ws/install/rmf_demos_gz:/rmf_demos_ws/install/rmf_demos:/rmf_demos_ws/install/rmf_reservation_node:/rmf_demos_ws/install/rmf_fleet_adapter_python:/rmf_demos_ws/install/rmf_fleet_adapter:/rmf_demos_ws/install/rmf_task_ros2:/rmf_demos_ws/install/rmf_websocket:/rmf_demos_ws/install/rmf_visualization:/rmf_demos_ws/install/rmf_visualization_schedule:/rmf_demos_ws/install/rmf_visualization_rviz2_plugins:/rmf_demos_ws/install/rmf_visualization_obstacles:/rmf_demos_ws/install/rmf_visualization_navgraphs:/rmf_demos_ws/install/rmf_visualization_floorplans:/rmf_demos_ws/install/rmf_visualization_fleet_states:/rmf_demos_ws/install/rmf_visualization_msgs:/rmf_demos_ws/install/rmf_traffic_ros2:/rmf_demos_ws/install/rmf_task_sequence:/rmf_demos_ws/install/rmf_task:/rmf_demos_ws/install/rmf_battery:/rmf_demos_ws/install/rmf_traffic:/rmf_demos_ws/install/rmf_utils:/rmf_demos_ws/install/rmf_traffic_msgs:/rmf_demos_ws/install/rmf_traffic_editor_test_maps:/rmf_demos_ws/install/rmf_traffic_editor_assets:/rmf_demos_ws/install/rmf_traffic_editor:/rmf_demos_ws/install/rmf_task_msgs:/rmf_demos_ws/install/rmf_site_map_msgs:/rmf_demos_ws/install/rmf_scheduler_msgs:/rmf_demos_ws/install/rmf_robot_sim_gz_plugins:/rmf_demos_ws/install/rmf_robot_sim_common:/rmf_demos_ws/install/rmf_reservation_msgs:/rmf_demos_ws/install/rmf_obstacle_msgs:/rmf_demos_ws/install/rmf_building_sim_gz_plugins:/rmf_demos_ws/install/rmf_lift_msgs:/rmf_demos_ws/install/rmf_ingestor_msgs:/rmf_demos_ws/install/rmf_fleet_msgs:/rmf_demos_ws/install/rmf_door_msgs:/rmf_demos_ws/install/rmf_dispenser_msgs:/rmf_demos_ws/install/rmf_demos_maps:/rmf_demos_ws/install/rmf_demos_assets:/rmf_demos_ws/install/rmf_charger_msgs:/rmf_demos_ws/install/rmf_building_map_msgs:/rmf_demos_ws/install/rmf_api_msgs:/rmf_demos_ws/install/pybind11_json_vendor:/rmf_demos_ws/install/nlohmann_json_schema_validator_vendor:/TFG_ws/install/mqtt_ros_bridge:/rmf_demos_ws/install/rmf_demos_fleet_adapter:/rmf_demos_ws/install/rmf_visualization_building_systems:/rmf_demos_ws/install/rmf_traffic_examples:/rmf_demos_ws/install/rmf_demos_bridges:/rmf_demos_ws/install/rmf_demos_tasks:/rmf_demos_ws/install/rmf_building_map_tools:/rmf_demos_ws/install/rmf_charging_schedule:/opt/ros/jazzy:/rmf_demos_ws/install/menge_vendor:/rmf_demos_ws/install/ament_cmake_catch2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor /usr/bin/cmake --install /TFG_ws/src/build/rmf_nayar

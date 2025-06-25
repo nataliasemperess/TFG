@@ -1,0 +1,37 @@
+[0.763s] Invoking command in '/TFG_ws/src/mqtt_ros_bridge': PYTHONPATH=/TFG_ws/src/build/mqtt_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/TFG_ws/src/install/mqtt_ros_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/mqtt_ros_bridge build --build-base /TFG_ws/src/build/mqtt_ros_bridge/build install --record /TFG_ws/src/build/mqtt_ros_bridge/install.log --single-version-externally-managed install_data
+[1.013s] running egg_info
+[1.013s] creating ../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info
+[1.029s] writing ../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info/PKG-INFO
+[1.030s] writing dependency_links to ../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info/dependency_links.txt
+[1.030s] writing entry points to ../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info/entry_points.txt
+[1.030s] writing requirements to ../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info/requires.txt
+[1.031s] writing top-level names to ../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info/top_level.txt
+[1.031s] writing manifest file '../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info/SOURCES.txt'
+[1.065s] reading manifest file '../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info/SOURCES.txt'
+[1.065s] writing manifest file '../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info/SOURCES.txt'
+[1.066s] running build
+[1.066s] running build_py
+[1.066s] creating /TFG_ws/src/build/mqtt_ros_bridge/build
+[1.066s] creating /TFG_ws/src/build/mqtt_ros_bridge/build/lib
+[1.066s] creating /TFG_ws/src/build/mqtt_ros_bridge/build/lib/mqtt_ros_bridge
+[1.066s] copying mqtt_ros_bridge/mqtt_ros_bridge_node.py -> /TFG_ws/src/build/mqtt_ros_bridge/build/lib/mqtt_ros_bridge
+[1.066s] copying mqtt_ros_bridge/__init__.py -> /TFG_ws/src/build/mqtt_ros_bridge/build/lib/mqtt_ros_bridge
+[1.067s] running install
+[1.071s] running install_lib
+[1.088s] creating /TFG_ws/src/install/mqtt_ros_bridge/lib/python3.12/site-packages/mqtt_ros_bridge
+[1.089s] copying /TFG_ws/src/build/mqtt_ros_bridge/build/lib/mqtt_ros_bridge/mqtt_ros_bridge_node.py -> /TFG_ws/src/install/mqtt_ros_bridge/lib/python3.12/site-packages/mqtt_ros_bridge
+[1.089s] copying /TFG_ws/src/build/mqtt_ros_bridge/build/lib/mqtt_ros_bridge/__init__.py -> /TFG_ws/src/install/mqtt_ros_bridge/lib/python3.12/site-packages/mqtt_ros_bridge
+[1.089s] byte-compiling /TFG_ws/src/install/mqtt_ros_bridge/lib/python3.12/site-packages/mqtt_ros_bridge/mqtt_ros_bridge_node.py to mqtt_ros_bridge_node.cpython-312.pyc
+[1.090s] byte-compiling /TFG_ws/src/install/mqtt_ros_bridge/lib/python3.12/site-packages/mqtt_ros_bridge/__init__.py to __init__.cpython-312.pyc
+[1.091s] running install_data
+[1.091s] creating /TFG_ws/src/install/mqtt_ros_bridge/share/ament_index
+[1.091s] creating /TFG_ws/src/install/mqtt_ros_bridge/share/ament_index/resource_index
+[1.091s] creating /TFG_ws/src/install/mqtt_ros_bridge/share/ament_index/resource_index/packages
+[1.091s] copying resource/mqtt_ros_bridge -> /TFG_ws/src/install/mqtt_ros_bridge/share/ament_index/resource_index/packages
+[1.091s] copying package.xml -> /TFG_ws/src/install/mqtt_ros_bridge/share/mqtt_ros_bridge
+[1.091s] running install_egg_info
+[1.109s] Copying ../build/mqtt_ros_bridge/mqtt_ros_bridge.egg-info to /TFG_ws/src/install/mqtt_ros_bridge/lib/python3.12/site-packages/mqtt_ros_bridge-0.0.0-py3.12.egg-info
+[1.113s] running install_scripts
+[1.243s] Installing mqtt_ros_bridge_node script to /TFG_ws/src/install/mqtt_ros_bridge/lib/mqtt_ros_bridge
+[1.244s] writing list of installed files to '/TFG_ws/src/build/mqtt_ros_bridge/install.log'
+[1.269s] Invoked command in '/TFG_ws/src/mqtt_ros_bridge' returned '0': PYTHONPATH=/TFG_ws/src/build/mqtt_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/TFG_ws/src/install/mqtt_ros_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/mqtt_ros_bridge build --build-base /TFG_ws/src/build/mqtt_ros_bridge/build install --record /TFG_ws/src/build/mqtt_ros_bridge/install.log --single-version-externally-managed install_data

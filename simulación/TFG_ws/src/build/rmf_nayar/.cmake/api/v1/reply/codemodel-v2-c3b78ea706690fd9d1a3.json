@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-cce1467a7268157a99cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "rmf_nayar",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_nayar3_crowdsim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_nayar3_crowdsim-412fdc2b436f49e86f08.json",
+					"name" : "generate_nayar3_crowdsim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_nayar3_nav_graphs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_nayar3_nav_graphs-a6e25f8c3b8399d00ee9.json",
+					"name" : "generate_nayar3_nav_graphs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_nayar_crowdsim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_nayar_crowdsim-2c252d74f22773682cfa.json",
+					"name" : "generate_nayar_crowdsim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_nayar_nav_graphs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_nayar_nav_graphs-b2d8756b9abee40a4b77.json",
+					"name" : "generate_nayar_nav_graphs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmf_nayar_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmf_nayar_uninstall-6d977a724bfb2648972b.json",
+					"name" : "rmf_nayar_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-57fb26435361807d83f5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/TFG_ws/src/build/rmf_nayar",
+		"source" : "/TFG_ws/src/rmf_nayar"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
