@@ -34,6 +34,8 @@ apt install -y ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control
 
 sudo apt update
 sudo apt install nlohmann-json3-dev
+pip3 install jinja2
+
 
 
 ```
