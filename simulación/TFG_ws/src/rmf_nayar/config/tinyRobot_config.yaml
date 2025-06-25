@@ -33,15 +33,6 @@ rmf_fleet:
   robots:
     tinyRobot1:
         charger: "tinyRobot1_charger"
-       
-    tinyRobot2:
-        charger: "tinyRobot2_charger"
-    
-    tinyRobot3:
-        charger: "tinyRobot3_charger"
-    
-    tinyRobot4:
-        charger: "tinyRobot4_charger"
    
         
 fleet_manager:
