@@ -4,10 +4,10 @@ import json
 
 # Mapeo de las plantas MQTT a los nombres de planta en ROS 2
 floor_mapping = {
-    "planta0": "floor0",  # planta0 se mapea a floor0
-    "planta1": "floor1",  # planta1 se mapea a floor1
-    "planta2": "floor2",  # planta2 se mapea a floor2
-    # Agrega más plantas según sea necesario
+    "planta0": "floor0",  
+    "planta1": "floor1",  
+    "planta2": "floor2", 
+  
 }
 
 # Esta función se ejecuta cuando recibimos un mensaje MQTT
@@ -39,7 +39,7 @@ def on_message(client, userdata, message):
 
 # Configuración del cliente MQTT
 client = mqtt.Client()
-client.connect("localhost", 1883, 60)  # Asegúrate de que el broker MQTT esté corriendo
+client.connect("localhost", 1883, 60)  
 
 # Suscríbete al tópico donde se recibe el mensaje de destino
 client.subscribe("/ascensor/move_to")  # Este es el tópico donde el robot recibe los mensajes de planta
