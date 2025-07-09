@@ -206,6 +206,19 @@ void estado_planta(float valor_actual)
       }
     }
   }
+    
+  // Enviar mensaje a /ascensor/move_to cuando la planta sea 0 o 1
+  if (planta_actual == 0 || planta_actual == 1) {
+    char payload[50];
+    if (planta_actual == 0) {
+      sprintf(payload, "{\"destination_floor\":\"planta0\"}");
+    } else if (planta_actual == 1) {
+      sprintf(payload, "{\"destination_floor\":\"planta1\"}");
+    }
+    client.publish("/ascensor/move_to", payload);
+    Serial.printf("Enviado a simulación: %s\n", payload);
+  }
+
 
   // Solo aumentar contador si ha cambiado de planta
   if (planta_actual != planta_anterior)
@@ -214,6 +227,7 @@ void estado_planta(float valor_actual)
     {
       contador_por_planta[planta_actual]++;
       Serial.printf("Contador planta %d = %d\n", planta_actual, contador_por_planta[planta_actual]);
+
 
       char topic[50];
       sprintf(topic, "ascensor/contador/planta_%d", planta_actual);
@@ -225,6 +239,7 @@ void estado_planta(float valor_actual)
     }
     planta_anterior = planta_actual;
   }
+
 
   /*
   char msg[200];
@@ -527,3 +542,4 @@ void loop()
     correoEnviado = true;
   }
 }
+
